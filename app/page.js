@@ -14,7 +14,7 @@ export default function Home() {
       <h2 className={[nobile.className].join(' ')}>
         HomePage
       </h2>
-      <section>
+      <section className={styles.focus}>
         <h3>Important à connaitre</h3>
         <h4 className={[nobile.className].join(' ')}>Les diagrammes UML</h4>
         <ul>

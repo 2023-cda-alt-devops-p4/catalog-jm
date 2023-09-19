@@ -1,0 +1,27 @@
+@use 'variables';
+
+@mixin cardDefault($border-color, $border-width, $background, $radius: variables.$border-radius) {
+  border-radius: $radius;
+  border: $border-color $border-width solid;
+  background-color: $background;
+  padding: 20px;
+  filter: drop-shadow(0px 1px 2px variables.$background-color-dark);
+
+  @media (prefers-color-scheme: dark) {
+    filter: drop-shadow(0px 1px 2px variables.$background-color);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: variables.$title-color;
+    }
+
+    p,
+    li {
+      color: variables.$content-color;
+    }
+  }
+}

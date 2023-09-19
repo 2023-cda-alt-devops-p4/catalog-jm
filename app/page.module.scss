@@ -1,0 +1,16 @@
+@use 'mixins';
+@use 'variables';
+
+.main {
+  margin: auto;
+  max-width: 80%;
+
+  .focus {
+    @include mixins.cardDefault(variables.$accent-color-primary, 1px, darken(variables.$background-color, 5%), );
+    scale: 1;
+    transition: scale 0.2s;
+    &:hover {
+      scale: 1.05;
+    }
+  }
+}
