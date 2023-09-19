@@ -5,18 +5,18 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>
+      <h2>
         HomePage
-      </h1>
+      </h2>
       <section>
-        <h2>Important à connaitre</h2>
-        <h3>Les diagrammes UML</h3>
+        <h3>Important à connaitre</h3>
+        <h4>Les diagrammes UML</h4>
         <ul>
           <li>Item 1</li>
           <li>Item 2</li>
           <li>Item 3</li>
         </ul>
-        <h3>La méthode Merise</h3>
+        <h4>La méthode Merise</h4>
         <ul>
           <li>Item 1</li>
           <li>Item 2</li>
@@ -24,12 +24,12 @@ export default function Home() {
         </ul>
       </section>
       <section>
-        <h2>Naviguer par catégories</h2>
+        <h3>Naviguer par catégories</h3>
         <Link href="/uml">
         <div>
-          <h3>
+          <h4>
             UML
-          </h3>
+          </h4>
           <p>
             Ici les différents types de diagrammes UML
           </p>
@@ -38,9 +38,9 @@ export default function Home() {
         </Link>
         <Link href="/merise">
         <div>
-          <h3>
+          <h4>
             Merise
-          </h3>
+          </h4>
           <p>
             Ici la description de la méthode Merise
           </p>
