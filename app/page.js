@@ -1,22 +1,28 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
 import Link from 'next/link'
+import { Nobile } from 'next/font/google'
+
+const nobile = Nobile({
+  subsets: ['latin'],
+  weight: '400',
+})
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h2>
+      <h2 className={[nobile.className].join(' ')}>
         HomePage
       </h2>
       <section>
         <h3>Important à connaitre</h3>
-        <h4>Les diagrammes UML</h4>
+        <h4 className={[nobile.className].join(' ')}>Les diagrammes UML</h4>
         <ul>
           <li>Item 1</li>
           <li>Item 2</li>
           <li>Item 3</li>
         </ul>
-        <h4>La méthode Merise</h4>
+        <h4 className={[nobile.className].join(' ')}>La méthode Merise</h4>
         <ul>
           <li>Item 1</li>
           <li>Item 2</li>
@@ -27,7 +33,7 @@ export default function Home() {
         <h3>Naviguer par catégories</h3>
         <Link href="/uml">
         <div>
-          <h4>
+          <h4 className={[nobile.className].join(' ')}>
             UML
           </h4>
           <p>
@@ -38,7 +44,7 @@ export default function Home() {
         </Link>
         <Link href="/merise">
         <div>
-          <h4>
+          <h4 className={[nobile.className].join(' ')}>
             Merise
           </h4>
           <p>

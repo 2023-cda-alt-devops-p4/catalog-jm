@@ -1,9 +1,13 @@
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import './globals.scss'
-import { Inter } from 'next/font/google'
+import { Metrophobic } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const metrophobic = Metrophobic({
+  subsets: ['latin'],
+  weight: '400',
+})
+
 
 export const metadata = {
   title: 'Mon Catalogue UML',
@@ -13,11 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className={inter.className}>
+      <body className={metrophobic.className}>
         <Navbar />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   )
 }
