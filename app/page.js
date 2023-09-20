@@ -8,6 +8,12 @@ const nobile = Nobile({
   weight: '400',
 })
 
+export const metadata = {
+  title: 'Mon Catalogue UML : Accueil',
+  description: 'CheatSheet UML',
+}
+
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -29,10 +35,10 @@ export default function Home() {
           <li>Item 3</li>
         </ul>
       </section>
-      <section>
+      <section className={styles.navCategory}>
         <h3>Naviguer par catégories</h3>
         <Link href="/uml">
-        <div>
+        <div className={styles.navCard}>
           <h4 className={[nobile.className].join(' ')}>
             UML
           </h4>
@@ -43,7 +49,7 @@ export default function Home() {
         </div>
         </Link>
         <Link href="/merise">
-        <div>
+        <div className={styles.navCard}>
           <h4 className={[nobile.className].join(' ')}>
             Merise
           </h4>

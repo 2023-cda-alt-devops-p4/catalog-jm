@@ -1,3 +1,5 @@
+'use client'
+import { useState } from 'react'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import './globals.scss'
@@ -8,17 +10,14 @@ const metrophobic = Metrophobic({
   weight: '400',
 })
 
-
-export const metadata = {
-  title: 'Mon Catalogue UML',
-  description: 'CheatSheet UML',
-}
-
 export default function RootLayout({ children }) {
+
+  const [darkTheme, setDarkTheme] = useState('dark')
+  console.log(darkTheme);
   return (
     <html lang="fr">
-      <body className={metrophobic.className}>
-        <Navbar />
+      <body className={metrophobic.className} data-theme-ui={darkTheme}>
+        <Navbar darkTheme={darkTheme} setDarkTheme={()=> setDarkTheme(prev => prev === 'light' ? 'dark': 'light')} />
         {children}
         <Footer />
       </body>
