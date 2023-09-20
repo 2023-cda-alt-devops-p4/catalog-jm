@@ -1,23 +1,26 @@
+'use client'
+import { useState } from 'react'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import './globals.scss'
-import { Inter } from 'next/font/google'
+import { Metrophobic } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'Mon Catalogue UML',
-  description: 'CheatSheet UML',
-}
+const metrophobic = Metrophobic({
+  subsets: ['latin'],
+  weight: '400',
+})
 
 export default function RootLayout({ children }) {
+
+  const [darkTheme, setDarkTheme] = useState('dark')
+  console.log(darkTheme);
   return (
     <html lang="fr">
-      <body className={inter.className}>
-        <Navbar />
+      <body className={metrophobic.className} data-theme-ui={darkTheme}>
+        <Navbar darkTheme={darkTheme} setDarkTheme={()=> setDarkTheme(prev => prev === 'light' ? 'dark': 'light')} />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   )
 }

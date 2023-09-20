@@ -1,0 +1,10 @@
+@use 'variables';
+
+@mixin cardDefault($border-color, $border-width, $background, $radius: variables.$border-radius) {
+  border-radius: $radius;
+  border: $border-color $border-width solid;
+  background-color: $background;
+  padding: 20px;
+  filter: drop-shadow(0px 1px 2px variables.$background-color-dark);
+
+}

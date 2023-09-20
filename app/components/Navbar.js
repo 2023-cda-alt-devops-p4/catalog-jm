@@ -1,10 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
+import { Nobile } from 'next/font/google'
 
-const Navbar = () => {
+const nobile = Nobile({
+  subsets: ['latin'],
+  weight: '400',
+})
+const Navbar = ({setDarkTheme}) => {
   return (
     <nav>
-      <h1>UML et Merise</h1>
+      <h1 className={[nobile.className].join(' ')}>UML et Merise</h1>
+      <p onClick={setDarkTheme}>Theme</p>
       <ul>
         <li><Link href="/">Accueil</Link></li>
         <li><Link href="/uml">UML</Link></li>
