@@ -1,0 +1,58 @@
+[
+  {
+    "title": "diagramme de classe",
+    "description": "Diagramme permettant de concevoir la base de données",
+    "elements": [
+      {
+        "name": "le nom de l'élement",
+        "url": "uneimage.jpg"
+      }
+    ],
+    "example": {
+      "url": "exampleimage.jpg",
+      "details": "Les détails de l'exemple"
+    }
+  },
+  {
+    "title": "diagramme de classe",
+    "description": "diagramme permettant de concevoir la base de données",
+    "elements": [
+      {
+        "name": "le nom de l'élement",
+        "url": "uneimage.jpg"
+      }
+    ],
+    "example": {
+      "url": "exampleimage.jpg",
+      "details": "Les détails de l'exemple"
+    }
+  },
+  {
+    "title": "diagramme de classe",
+    "description": "diagramme permettant de concevoir la base de données",
+    "elements": [
+      {
+        "name": "le nom de l'élement",
+        "url": "uneimage.jpg"
+      }
+    ],
+    "example": {
+      "url": "exampleimage.jpg",
+      "details": "Les détails de l'exemple"
+    }
+  },
+  {
+    "title": "diagramme de classe",
+    "description": "diagramme permettant de concevoir la base de données",
+    "elements": [
+      {
+        "name": "le nom de l'élement",
+        "url": "uneimage.jpg"
+      }
+    ],
+    "example": {
+      "url": "exampleimage.jpg",
+      "details": "Les détails de l'exemple"
+    }
+  }
+]
