@@ -1,12 +1,13 @@
 import React from 'react'
 import { Nobile } from 'next/font/google'
 
+
 const nobile = Nobile({
   subsets: ['latin'],
   weight: '400',
 })
 
-const UmlComponent = (item) => {
+const UmlComponent = ({item}) => {
   return (
     <section>
       <h3>{item.title}</h3>
