@@ -1,58 +1,288 @@
 [
   {
-    "title": "diagramme de classe",
-    "description": "Diagramme permettant de concevoir la base de données",
-    "elements": [
+    "type": "structure",
+    "diagrams": [
       {
-        "name": "le nom de l'élement",
-        "url": "uneimage.jpg"
+        "id": "class",
+        "title": "Diagramme de classe",
+        "description": "Le diagramme de sert à décrire la structure logique d'un système en la représentant sous forme de classes et de relations entre les classes",
+        "elements": [
+          {
+            "name": "Classe",
+            "url": "uneimage.jpg",
+            "explanation":"Une classe est représentée par un rectangle séparé en trois parties : Le nom de la classe, ses attributs et ses méthodes. Les attributs et les méthodes représentent le comportement de la classe"
+          },
+          {
+            "name": "Visibilité Public",
+            "url": "uneimage.jpg",
+            "explanation":"Indique si un attribut ou une méthode est publique"
+          },
+          {
+            "name": "Visibilité Privée",
+            "url": "uneimage.jpg",
+            "explanation":"Indique si un attribut ou une méthode est privée"
+          },
+          {
+            "name": "Relation d'Association",
+            "url": "uneimage.jpg",
+            "explanation":"Relation entre deux classes qui décrit les connexions entre leurs instances"
+          },
+          {
+            "name": "Relation d'Héritage",
+            "url": "uneimage.jpg",
+            "explanation": " L’héritage est la relation entre une classe fille qui hérite des attributs et méthodes d’une classe mère. La flèche va de la fille vers la mère. Les classes abstraites sont représentée avec un titre en italique"
+          },
+          {
+            "name": "Relation d'Agrégation",
+            "url": "uneimage.jpg",
+            "explanation": "Une agrégation représente une relation où une classe dépend d’une autre, mais si cette dernière est détruite, la première ne le sera pas."
+          },
+          {
+            "name": "Relation de Composition",
+            "url": "uneimage.jpg",
+            "explanation": "Une composition représente une relation où une classe dépend d’autre, et si cette dernière est détruite, les autres le sont aussi."
+          },
+          {
+            "name": "Relation de Dépendance",
+            "url": "uneimage.jpg",
+            "explanation": "Une dépendance est relation unidirectionnelle entre deux classes. Elle indique que la modification de la cible peut impliquer une modification de la source."
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "object",
+        "title": "Diagramme d'objet",
+        "description": "Un diagramme d’objet représente une instance spécifique d’un diagramme de classes à un moment précis. Il peut être utilisé pour illustrer le modèle de classe en montrant un exemple qui explique le modèle.",
+        "elements": [
+
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "composite",
+        "title": "Diagramme de structure composite",
+        "description": "Le diagramme de structure composite expose la structure interne d’une classe, et les relation qu’elle peut avoir avec les autres classe",
+        "elements": [
+          {
+            "name": "Classificateur",
+            "url": "uneimage.jpg",
+            "explanation": "Elément de modèle qui décrit des caractéristiques structurelles et comportementales."
+          },
+          {
+            "name": "Port",
+            "url": "uneimage.jpg",
+            "explanation": "Point d’interaction entre le classificateur et son environnement, entre le classificateurs et ses parties internes (les ports correspondent à des méthodes)"
+          },
+          {
+            "name": "Parties",
+            "url": "uneimage.jpg",
+            "explanation": "Permet de définir une zone bien délimitée à l’intérieur d’une classe ou d’un composant. Les parties peuvent être connectées aux autres parties ou port, soit directement, soit via un port situé à l’extérieur de la partie."
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "composant",
+        "title": "Diagramme de composants",
+        "description": "Diagramme de composants est essentiellement un diagramme de classes qui met l’accent sur les composants systèmes. Il décrit les composants et leurs dépendances dans l’environnement.",
+        "elements": [
+          {
+            "name": "Composant",
+            "url": "uneimage.jpg",
+            "explanation" : "Un composant est un élément physique qui représente une parti d’un système, par exemple du code, un script, un fichier de données, une table…"
+          },
+          {
+            "name": "Interface",
+            "url": "uneimage.jpg",
+            "explanation" : "Les interfaces peuvent être implémentée par le composant (réalisée par le composant, par un de ses classificateurs, ou fourni par un port public. Il peut aussi nécessiter une interface (soit tout le composant, soit un de ses classificateurs soit un de ses ports publics). Une interface peut être requise ou implémentée."
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "package",
+        "title": "Diagramme de paquetages",
+        "description": "Un paquetage est une collection d’éléments du modèle : il peut contenir les collections des Uses Cases ou des classes et les relations qui les lient entre eux.Les paquetage peuvent être utilisés dans n’importe quelle vue ou diagramme UML Un paquetage et un espace de nom qui peut posséder des interfaces. Il peut exister des dépendances entre les paquetages et entre les éléments d’un même paquetage. Le diagramme de paquetage sert à organiser les fonctionnalités et à avoir une vision claire des dépendances.",
+        "elements": [
+          {
+            "name": "access",
+            "url": "uneimage.jpg",
+            "explanation": "Tout élément public de B est accessible par son complet depuis A; Les éléements de A ont accès aux éléments public de B."
+          },
+          {
+            "name": "import",
+            "url": "uneimage.jpg",
+            "explanation": "Tout élément public de B est accessible par son nom depuis A, 'comme si' les éléments de B étaient dans A."
+          },
+          {
+            "name": "use",
+            "url": "uneimage.jpg",
+            "explanation": "Il existe au moins un élément de A qui a besoin d'un élément de B."
+          },
+          {
+            "name": "merge",
+            "url": "uneimage.jpg",
+            "explanation": "Le contenu du package 1 fusionne avec celui de B (équivaut à une généralisation, B est le package 'père'"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "class1",
+        "title": "diagramme de classe",
+        "description": "Diagramme permettant de concevoir la base de données",
+        "elements": [
+          {
+            "name": "le nom de l'élement",
+            "url": "uneimage.jpg"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "class1",
+        "title": "diagramme de classe",
+        "description": "Diagramme permettant de concevoir la base de données",
+        "elements": [
+          {
+            "name": "le nom de l'élement",
+            "url": "uneimage.jpg"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
       }
-    ],
-    "example": {
-      "url": "exampleimage.jpg",
-      "details": "Les détails de l'exemple"
-    }
+    ]
   },
   {
-    "title": "diagramme de classe",
-    "description": "diagramme permettant de concevoir la base de données",
-    "elements": [
+    "type": "comportement",
+    "diagrams": [
       {
-        "name": "le nom de l'élement",
-        "url": "uneimage.jpg"
-      }
-    ],
-    "example": {
-      "url": "exampleimage.jpg",
-      "details": "Les détails de l'exemple"
-    }
-  },
-  {
-    "title": "diagramme de classe",
-    "description": "diagramme permettant de concevoir la base de données",
-    "elements": [
+        "id": "class1",
+        "title": "diagramme de classe",
+        "description": "Diagramme permettant de concevoir la base de données",
+        "elements": [
+          {
+            "name": "le nom de l'élement",
+            "url": "uneimage.jpg"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
       {
-        "name": "le nom de l'élement",
-        "url": "uneimage.jpg"
-      }
-    ],
-    "example": {
-      "url": "exampleimage.jpg",
-      "details": "Les détails de l'exemple"
-    }
-  },
-  {
-    "title": "diagramme de classe",
-    "description": "diagramme permettant de concevoir la base de données",
-    "elements": [
+        "id": "class1",
+        "title": "diagramme de classe",
+        "description": "Diagramme permettant de concevoir la base de données",
+        "elements": [
+          {
+            "name": "le nom de l'élement",
+            "url": "uneimage.jpg"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
       {
-        "name": "le nom de l'élement",
-        "url": "uneimage.jpg"
+        "id": "class1",
+        "title": "diagramme de classe",
+        "description": "Diagramme permettant de concevoir la base de données",
+        "elements": [
+          {
+            "name": "le nom de l'élement",
+            "url": "uneimage.jpg"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "class1",
+        "title": "diagramme de classe",
+        "description": "Diagramme permettant de concevoir la base de données",
+        "elements": [
+          {
+            "name": "le nom de l'élement",
+            "url": "uneimage.jpg"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "class1",
+        "title": "diagramme de classe",
+        "description": "Diagramme permettant de concevoir la base de données",
+        "elements": [
+          {
+            "name": "le nom de l'élement",
+            "url": "uneimage.jpg"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "class1",
+        "title": "diagramme de classe",
+        "description": "Diagramme permettant de concevoir la base de données",
+        "elements": [
+          {
+            "name": "le nom de l'élement",
+            "url": "uneimage.jpg"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
+      },
+      {
+        "id": "class1",
+        "title": "diagramme de classe",
+        "description": "Diagramme permettant de concevoir la base de données",
+        "elements": [
+          {
+            "name": "le nom de l'élement",
+            "url": "uneimage.jpg"
+          }
+        ],
+        "example": {
+          "url": "exampleimage.jpg",
+          "details": "Les détails de l'exemple"
+        }
       }
-    ],
-    "example": {
-      "url": "exampleimage.jpg",
-      "details": "Les détails de l'exemple"
-    }
+    ]
   }
 ]

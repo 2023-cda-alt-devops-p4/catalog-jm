@@ -9,7 +9,7 @@ const nobile = Nobile({
 
 const UmlComponent = ({item}) => {
   return (
-    <section>
+    <section id={item.id}>
       <h3>{item.title}</h3>
       <h4 className={[nobile.className].join(' ')}>{item.description}</h4>
       {item.elements.map((el, i) => {
