@@ -367,9 +367,24 @@
             "explanation":"Le point de jonction permet de représenter des partage de transition entre deux états."
           },
           {
-            "name": "Point de décision",
+            "name": "Etat composite",
             "url": "uneimage.jpg",
-            "explanation":""
+            "explanation":"L'état composite est un état qui contient d'autres sous états"
+          },
+          {
+            "name": "Le pseudo état historique",
+            "url": "uneimage.jpg",
+            "explanation":"Une transition ayant pour cible l’état historique est équivalente à une transition ayant pour cible le dernier état visité dans la région contenant pseudo-état historique."
+          },
+          {
+            "name": "Etat concurrent",
+            "url": "uneimage.jpg",
+            "explanation":"L'état concurrent exprime la possibilité d'un objet a se trouver dans plusieurs états"
+          },
+          {
+            "name": "Transition concurrente",
+            "url": "uneimage.jpg",
+            "explanation":"La transition concurrente peut être de type conjonction (en entrée) ou disjonction (en sortie). Elle se positionne en début et fin d'un état concurrent."
           }
         ],
         "example": {
@@ -378,13 +393,49 @@
         }
       },
       {
-        "id": "class1",
-        "title": "diagramme de classe",
-        "description": "Diagramme permettant de concevoir la base de données",
+        "id": "sequence",
+        "title": "Diagramme de séquence",
+        "description": "Le diagramme de séquence permet de représenter les interaction entre objets, acteurs et instances d’objet en précisant la chronologie des échanges entre chacun. Il représente une instance (les scénarios possibles) d’un cas d’utilisation.",
         "elements": [
           {
-            "name": "le nom de l'élement",
-            "url": "uneimage.jpg"
+            "name": "Objet",
+            "url": "uneimage.jpg",
+            "explanation": "Représentation d'un objet jouant un rôle dans une instance de cas l'utilisation"
+          },
+          {
+            "name": "Ligne de vie",
+            "url": "uneimage.jpg",
+            "explanation": "Représente la durée de vie d'un objet dans la séquence."
+          },
+          {
+            "name": "Période d'activité",
+            "url": "uneimage.jpg",
+            "explanation": "La période d’activité correspond an temps pendant lequel un objet fait une action."
+          },
+          {
+            "name": "Message Synchrone",
+            "url": "uneimage.jpg",
+            "explanation": "Le message est orienté de l'emetteur au recepteur, et déclenche une opération. Il bloque l'emetteur jusqu'à la prise en compte du message par le recepteur."
+          },
+          {
+            "name": "Message Asynchrone",
+            "url": "uneimage.jpg",
+            "explanation": "Le message est orienté de l'emetteur au recepteur, et déclenche une opération. Il n'interrompt pas l'exécution de l'emetteur."
+          },
+          {
+            "name": "Message reflexif",
+            "url": "uneimage.jpg",
+            "explanation": "Un message reflexif est un message qu'un objet envoie à lui-même."
+          },
+          {
+            "name": "Destruction",
+            "url": "uneimage.jpg",
+            "explanation": "Exprime la destruction d'un objet après la reception d'un message."
+          },
+          {
+            "name": "Cadre d'interaction",
+            "url": "uneimage.jpg",
+            "explanation": "Le cadre d'interaction permet de tester un échange de message en fonction d'un opérateur. Il existe 12 opérateurs, les opérateurs fondamentaux sont 'opt' (indique si une séquence peut se produire ou non), 'alt' (une seule des séquences peut se produire) et 'loop' (permet de répéter un fragment un certain nombre de fois en fonction d'une condition)"
           }
         ],
         "example": {
@@ -393,13 +444,29 @@
         }
       },
       {
-        "id": "class1",
-        "title": "diagramme de classe",
-        "description": "Diagramme permettant de concevoir la base de données",
+        "id": "communication",
+        "title": "Diagramme de communication",
+        "description": "Le diagramme de communication représente les interactions entre les objets et les relations permettant ces interactions. Il est créé à partir du diagramme de séquence",
         "elements": [
           {
-            "name": "le nom de l'élement",
-            "url": "uneimage.jpg"
+            "name": "Objet",
+            "url": "uneimage.jpg",
+            "explanation": "Représentation d'un objet jouant un rôle dans le diagramme de séquence. Les objets peuvent être créés ou détruits au cous d'un interface, et porter respectivement les stéréotypes <<créé>> ou <<détruit>>."
+          },
+          {
+            "name": "Message ",
+            "url": "uneimage.jpg",
+            "explanation": "Le message est orienté de l'emetteur au recepteur, et déclenche une opération. Les messages sont numérotés pour organiser l'ordre d'exécution."
+          },
+          {
+            "name": "Acteur",
+            "url": "uneimage.jpg",
+            "explanation": "Les acteurs peuvent être humain, logiciel ou matériel."
+          },
+          {
+            "name": "Contrainte",
+            "url": "uneimage.jpg",
+            "explanation": "Un message peut être préfixé par une contrainte pour définir son cadre d'exécution."
           }
         ],
         "example": {
@@ -408,13 +475,24 @@
         }
       },
       {
-        "id": "class1",
-        "title": "diagramme de classe",
-        "description": "Diagramme permettant de concevoir la base de données",
+        "id": "time",
+        "title": "Le diagramme de temps",
+        "description": "Le diagramme de temps présente le comportement des objets et leur changement d'état à travers d'une période de temps. Le temps s'écoule de la gauche vers la droite.",
         "elements": [
           {
-            "name": "le nom de l'élement",
-            "url": "uneimage.jpg"
+            "name": "Ligne de vie",
+            "url": "uneimage.jpg",
+            "explanation": "Représente la vie d'un objet"
+          },
+          {
+            "name": "Etat",
+            "url": "uneimage.jpg",
+            "explanation": "Indique l'état d'un objet."
+          },
+          {
+            "name": "Durée",
+            "url": "uneimage.jpg",
+            "explanation": "Permet d'exprimer une durée de spécifique à un état de l'objet."
           }
         ],
         "example": {
@@ -423,9 +501,9 @@
         }
       },
       {
-        "id": "class1",
-        "title": "diagramme de classe",
-        "description": "Diagramme permettant de concevoir la base de données",
+        "id": "interactivity",
+        "title": "Diagramme d'intéractivité'",
+        "description": "Le diagramme d'interactivité est utilisé pour la représentation de système complexe. Il s'agit d'un variante du diagramme d'activité qui permet une vue d'ensemble des flux de contrôle. Les noeuds sont des diagrammes de séquence et des diagrammes d'activité. Les éléments constitutifs sont les mêmes que ces derniers.",
         "elements": [
           {
             "name": "le nom de l'élement",
