@@ -394,42 +394,42 @@
         "elements": [
           {
             "name": "Objet",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/sequence/objet.png",
             "explanation": "Représentation d'un objet jouant un rôle dans une instance de cas l'utilisation"
           },
           {
             "name": "Ligne de vie",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/sequence/lignevie.png",
             "explanation": "Représente la durée de vie d'un objet dans la séquence."
           },
           {
             "name": "Période d'activité",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/sequence/peractivite.png",
             "explanation": "La période d’activité correspond an temps pendant lequel un objet fait une action."
           },
           {
             "name": "Message Synchrone",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/sequence/synchrone.png",
             "explanation": "Le message est orienté de l'emetteur au recepteur, et déclenche une opération. Il bloque l'emetteur jusqu'à la prise en compte du message par le recepteur."
           },
           {
             "name": "Message Asynchrone",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/sequence/asynchrone.png",
             "explanation": "Le message est orienté de l'emetteur au recepteur, et déclenche une opération. Il n'interrompt pas l'exécution de l'emetteur."
           },
           {
             "name": "Message reflexif",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/sequence/reflexif.png",
             "explanation": "Un message reflexif est un message qu'un objet envoie à lui-même."
           },
           {
             "name": "Destruction",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/sequence/destruction.png",
             "explanation": "Exprime la destruction d'un objet après la reception d'un message."
           },
           {
             "name": "Cadre d'interaction",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/sequence/interaction.png",
             "explanation": "Le cadre d'interaction permet de tester un échange de message en fonction d'un opérateur. Il existe 12 opérateurs, les opérateurs fondamentaux sont 'opt' (indique si une séquence peut se produire ou non), 'alt' (une seule des séquences peut se produire) et 'loop' (permet de répéter un fragment un certain nombre de fois en fonction d'une condition)"
           }
         ],
@@ -445,22 +445,22 @@
         "elements": [
           {
             "name": "Objet",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/communication/objet.png",
             "explanation": "Représentation d'un objet jouant un rôle dans le diagramme de séquence. Les objets peuvent être créés ou détruits au cous d'un interface, et porter respectivement les stéréotypes <<créé>> ou <<détruit>>."
           },
           {
             "name": "Message ",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/communication/transition.png",
             "explanation": "Le message est orienté de l'emetteur au recepteur, et déclenche une opération. Les messages sont numérotés pour organiser l'ordre d'exécution."
           },
           {
             "name": "Acteur",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/communication/actor.png",
             "explanation": "Les acteurs peuvent être humain, logiciel ou matériel."
           },
           {
             "name": "Contrainte",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/communication/contrainte.png",
             "explanation": "Un message peut être préfixé par une contrainte pour définir son cadre d'exécution."
           }
         ],
@@ -476,17 +476,17 @@
         "elements": [
           {
             "name": "Ligne de vie",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/time/vie.png",
             "explanation": "Représente la vie d'un objet"
           },
           {
             "name": "Etat",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/time/etat.png",
             "explanation": "Indique l'état d'un objet."
           },
           {
             "name": "Durée",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/time/duree.png",
             "explanation": "Permet d'exprimer une durée de spécifique à un état de l'objet."
           }
         ],
