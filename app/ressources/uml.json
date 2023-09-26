@@ -45,7 +45,7 @@
         ],
         "example": {
           "url": "/img/uml/example/class.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme montre les classes utilisées dans un système de boutique en ligne. Nous pouvons voir les différentes multiplicités sur les associations, ainsi que différentes relation de composition vers la classe 'Account'. Ceci implique que la destruction de cette classe détruira les classes associées."
         }
       },
       {
@@ -91,7 +91,7 @@
         ],
         "example": {
           "url": "/img/uml/example/object.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme d'objet montre les instances d'un système de connexion à un compte utlisateur. Les visibilités des différentes méthodes et attributs sont représentées. La navigabilité entre les objets indiquent quel objet utilise un autre."
         }
       },
       {
@@ -117,7 +117,7 @@
         ],
         "example": {
           "url": "/img/uml/example/composite-structure.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme montre la structure composite d'un distributeur de billet. Il y a 2 classificateur (Bank et Vault, qui est une partie de Bank). La partie Modem possède un port relié à une interface requise pour son fonctionnement."
         }
       },
       {
@@ -138,7 +138,7 @@
         ],
         "example": {
           "url": "/img/uml/example/component.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme de composant pour une boutique ligne montre les différents éléments phyisque à son fonctionnement. Ces composants contiennent d'autres composants internes, et sont reliés entre eux via des interfaces"
         }
       },
       {
@@ -174,7 +174,7 @@
         ],
         "example": {
           "url": "/img/uml/example/package.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ceci est le diagramme de package d'un système multicouche. Il décrit les dépendances entre chaque package, on peut aussi y voir des packages contenu à l'interieur d'autres package et les relations de dépendances qu'ils ont entre eux."
         }
       },
       {
@@ -199,8 +199,8 @@
           }
         ],
         "example": {
-          "url": "/img/uml/example/deployment.png",
-          "details": "Les détails de l'exemple"
+          "url": "/img/uml/example/deployment.jpg",
+          "details": "Ce diagramme de déploiement montre les éléments physiques qui sont éxecutés lorsqu'un utilisateur navigue sur un site web."
         }
       },
       {
@@ -226,7 +226,7 @@
         ],
         "example": {
           "url": "/img/uml/example/profile.png",
-          "details": "Les détails de l'exemple"
+          "details": "Un exemple de profil de type méta-classe qui montre leurs extensions possible via des profils de stéréotypes."
         }
       }
     ]
@@ -267,12 +267,12 @@
           {
             "name": "Relation d'héritage",
             "url": "/img/uml/element/usecase/heritage.png",
-            "explanation": "Utilisée entre les acteurs, cette relation permet de définir une spécialisation d'un acteur par rapport à l'acteur dont il hérite."
+            "explanation": "Utilisée entre les acteurs, cette relation permet de définir une spécialisation d'un acteur par rapport à l'acteur dont il hérite. Utilisée entre les cas d'utilisation, il représente les options du cas d'utilisation dont ils héritent"
           }
         ],
         "example": {
           "url": "/img/uml/example/use-case.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme représente le système où des passagers désirent prendre l'avion. Nous pouvons y voir les relations d'héritage entre les acteurs"
         }
       },
       {
@@ -323,7 +323,7 @@
         ],
         "example": {
           "url": "/img/uml/example/activity.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme d'activité décrit le processus d'achat d'un ticket pour l'utilisation d'un transport sur une borne. On y voit les différentes étapes, de la sélection du ticket jusqu'à l'édition de ce dernier, en passant par le paiement, en carte ou en liquide."
         }
       },
       {
@@ -384,7 +384,7 @@
         ],
         "example": {
           "url": "/img/uml/example/state.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme décrit les différents états que peut avoir un distributeur automatique de billets. On y voit le processus d'allumage du distributeur, l'état si il y a eu un dysfonctionnement. Il y est aussi définit l'état composite lorsque l'appareil est utilisé, avec les activités et les actions le concernant."
         }
       },
       {
@@ -430,12 +430,12 @@
           {
             "name": "Cadre d'interaction",
             "url": "/img/uml/element/sequence/interaction.png",
-            "explanation": "Le cadre d'interaction permet de tester un échange de message en fonction d'un opérateur. Il existe 12 opérateurs, les opérateurs fondamentaux sont 'opt' (indique si une séquence peut se produire ou non), 'alt' (une seule des séquences peut se produire) et 'loop' (permet de répéter un fragment un certain nombre de fois en fonction d'une condition)"
+            "explanation": "Le cadre d'interaction permet de tester un échange de message en fonction d'un opérateur. Les opérateurs fondamentaux sont 'opt' (indique si une séquence peut se produire ou non), 'alt' (une seule des séquences peut se produire) et 'loop' (permet de répéter un fragment un certain nombre de fois en fonction d'une condition)"
           }
         ],
         "example": {
           "url": "/img/uml/example/sequence.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme de séquence montre les interactions d'un utilisation avec une librairie en ligne. Des cadres d'intéractions notamment un cadre qui définit une boucle sur la recherche d'ouvrage, ainsi que des cadres qui expriment la possibilité ou non de consulter la fiche ou de commander un livre."
         }
       },
       {
@@ -466,7 +466,7 @@
         ],
         "example": {
           "url": "/img/uml/example/communication.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme de communication montre les interactions entre les objets dans le processus d'un acteur souhaitant consulter une librairire en ligne. Les messages sont numérotés pour définir l'ordre, et des contraintes sont appliquées sur certaines méthodes."
         }
       },
       {
@@ -492,7 +492,7 @@
         ],
         "example": {
           "url": "/img/uml/example/timing.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme de temps exprime les différents états d'une personne atteinte de la maladie d'Alzheimer."
         }
       },
       {
@@ -503,7 +503,7 @@
         ],
         "example": {
           "url": "/img/uml/example/interaction.png",
-          "details": "Les détails de l'exemple"
+          "details": "Ce diagramme d'interactivité exprime le processus de validation d'un message posté par un utilisateur dans une section de commentaire. Il mélange le diagramme d'activité définissant si un message et valide ou non, et dans le cas ou il est valide, le diagramme est affiné en décrivant le processus d'enregistrement par un diagramme de séquence."
         }
       }
     ]
