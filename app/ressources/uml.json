@@ -58,7 +58,46 @@
         "title": "Diagramme d'objet",
         "description": "Un diagramme d’objet représente une instance spécifique d’un diagramme de classes à un moment précis. Il peut être utilisé pour illustrer le modèle de classe en montrant un exemple qui explique le modèle.",
         "elements": [
-
+          {
+            "name": "Classe",
+            "url": "uneimage.jpg",
+            "explanation":"Une classe est représentée par un rectangle séparé en trois parties : Le nom de la classe, ses attributs et ses méthodes. Les attributs et les méthodes représentent le comportement de la classe"
+          },
+          {
+            "name": "Visibilité Public",
+            "url": "uneimage.jpg",
+            "explanation":"Indique si un attribut ou une méthode est publique"
+          },
+          {
+            "name": "Visibilité Privée",
+            "url": "uneimage.jpg",
+            "explanation":"Indique si un attribut ou une méthode est privée"
+          },
+          {
+            "name": "Relation d'Association",
+            "url": "uneimage.jpg",
+            "explanation":"Relation entre deux classes qui décrit les connexions entre leurs instances"
+          },
+          {
+            "name": "Relation d'Héritage",
+            "url": "uneimage.jpg",
+            "explanation": " L’héritage est la relation entre une classe fille qui hérite des attributs et méthodes d’une classe mère. La flèche va de la fille vers la mère. Les classes abstraites sont représentée avec un titre en italique"
+          },
+          {
+            "name": "Relation d'Agrégation",
+            "url": "uneimage.jpg",
+            "explanation": "Une agrégation représente une relation où une classe dépend d’une autre, mais si cette dernière est détruite, la première ne le sera pas."
+          },
+          {
+            "name": "Relation de Composition",
+            "url": "uneimage.jpg",
+            "explanation": "Une composition représente une relation où une classe dépend d’autre, et si cette dernière est détruite, les autres le sont aussi."
+          },
+          {
+            "name": "Relation de Dépendance",
+            "url": "uneimage.jpg",
+            "explanation": "Une dépendance est relation unidirectionnelle entre deux classes. Elle indique que la modification de la cible peut impliquer une modification de la source."
+          }
         ],
         "example": {
           "url": "exampleimage.jpg",
@@ -144,13 +183,24 @@
         }
       },
       {
-        "id": "class1",
-        "title": "diagramme de classe",
-        "description": "Diagramme permettant de concevoir la base de données",
+        "id": "deploy",
+        "title": "Diagramme de déploiement",
+        "description": "LE diagramme de déploiement présente la structure du système lors de son exécution. C’est un graphe de noeuds connectés par des associations qui représente la communication. Les noeuds peuvent contenir des instances de composant (indique que le composant vit et s'exécute dans le noeud, les composants peuvent contenir des objets, et les composants sont connectés les uns autres par des relations de dépendances.",
         "elements": [
           {
-            "name": "le nom de l'élement",
-            "url": "uneimage.jpg"
+            "name": "Noeud",
+            "url": "uneimage.jpg",
+            "explanation": "Un noeud est un élément physique qui existe pendant l'exécution. Il a un nom qui permet de le distinguer des autres et peut être associé à un stéréotype qui permet de distinguer"
+          },
+          {
+            "name": "Composant",
+            "url": "uneimage.jpg",
+            "explanation" : "Un composant est un élément physique qui représente une parti d’un système, par exemple du code, un script, un fichier de données, une table…"
+          },
+          {
+            "name": "Relation de Dépendance",
+            "url": "uneimage.jpg",
+            "explanation": "Une dépendance est relation unidirectionnelle entre deux classes. Elle indique que la modification de la cible peut impliquer une modification de la source."
           }
         ],
         "example": {
@@ -159,13 +209,24 @@
         }
       },
       {
-        "id": "class1",
-        "title": "diagramme de classe",
-        "description": "Diagramme permettant de concevoir la base de données",
+        "id": "profil",
+        "title": "Diagramme de profils",
+        "description": "Un profil peut définir des classes, des stéréotypes, des valeurs, des contraintes. Il permet d’introduire nos propres éléments et stéréotypes. Une méta-classe est un profil de classe qui peut être étendu par des stéréotypes. Un stéréotypes est un profil de classe qui précise de quelle manière une méta-classe peut être étendue",
         "elements": [
           {
-            "name": "le nom de l'élement",
-            "url": "uneimage.jpg"
+            "name": "Profil",
+            "url": "uneimage.jpg",
+            "explanation": "Classificateur nommé qui regroupe toutes les particularités décrites"
+          },
+          {
+            "name": "Méta-classe",
+            "url": "uneimage.jpg",
+            "explanation": "Profil de classe qui peut être étendu par des stéréotypes"
+          },
+          {
+            "name": "Stéréotypes",
+            "url": "uneimage.jpg",
+            "explanation": "Un stéréotype est un profil de classe qui précise de quelle manière une méta-classe peut être étendue"
           }
         ],
         "example": {
@@ -179,13 +240,39 @@
     "type": "comportement",
     "diagrams": [
       {
-        "id": "class1",
-        "title": "diagramme de classe",
-        "description": "Diagramme permettant de concevoir la base de données",
+        "id": "usecase",
+        "title": "Diagramme de cas d'utilisation",
+        "description": "Le diagramme de cas d'utilisation décrit sous forme d'actions et de réaction le comportement d'un système du point de vue d'un utilisateur.. Il sert à modéliser les aspects d'un système, en montrant les acteurs et les fonctions offertes.",
         "elements": [
           {
-            "name": "le nom de l'élement",
-            "url": "uneimage.jpg"
+            "name": "Système",
+            "url": "uneimage.jpg",
+            "explanation": "Représente le système de l'application présentée dans le diagramme"
+          },
+          {
+            "name": "Acteur",
+            "url": "uneimage.jpg",
+            "explanation": "Les acteurs peuvent être humain, logiciel ou matériel. Il peut jouer plusieurs rôles. Il peut y avoir des acteurs principaux et secondaires, et un acteur peut être une spécialisation d'un autre acteur"
+          },
+          {
+            "name": "Cas d'utilisation",
+            "url": "uneimage.jpg",
+            "explanation": "Le cas d'utilisation est une action qui peut effectuer le système. Il peut être une action de l'utilisation, ou une réaction à un autre cas d'utilisation."
+          },
+          {
+            "name": "Relation d'inclusion",
+            "url": "uneimage.jpg",
+            "explanation": "Une relation d'inclusion est une relation de dépendance forte entre deux actions. L'action vers laquelle le pointeur est dirigé ne peut être effectuée qui si l'action d'où le pointeur prend son origine à été réalisée."
+          },
+          {
+            "name": "Relation d'exclusion",
+            "url": "uneimage.jpg",
+            "explanation": "Une relation d'exclusion est relation de dépendance faible entre deux actions. L'action vers laquelle le pointeur est dirigée peut être effectuée à partir de l'action d'où le pointeur prend son origine, mais n'est pas obligatoire."
+          },
+          {
+            "name": "Relation d'héritage",
+            "url": "uneimage.jpg",
+            "explanation": "Utilisée entre les acteurs, cette relation permet de définir une spécialisation d'un acteur par rapport à l'acteur dont il hérite."
           }
         ],
         "example": {
@@ -194,8 +281,8 @@
         }
       },
       {
-        "id": "class1",
-        "title": "diagramme de classe",
+        "id": "activity",
+        "title": "diagramme d'activité'",
         "description": "Diagramme permettant de concevoir la base de données",
         "elements": [
           {
