@@ -283,11 +283,47 @@
       {
         "id": "activity",
         "title": "diagramme d'activité'",
-        "description": "Diagramme permettant de concevoir la base de données",
+        "description": "Le diagramme d’activité permet de décrire la logique procédurale d’une activité : modélisation des processus métier, modélisation des workflows. Il prend aussi en charge les comportements parallèles. Les diagrammes d’activité indique ce qui se passe mais ne précise pas qui fait quoi : aucune classe n’est désignée.",
         "elements": [
           {
-            "name": "le nom de l'élement",
-            "url": "uneimage.jpg"
+            "name": "Etat initial",
+            "url": "uneimage.jpg",
+            "explanation":"L'état initial indique le point de départ de l'activité"
+          },
+          {
+            "name": "Etat final",
+            "url": "uneimage.jpg",
+            "explanation":"L'état final indique le point de fin de l'activité"
+          },
+          {
+            "name": "Action",
+            "url": "uneimage.jpg",
+            "explanation":"Une action est un élément représentant une partie de l'activité"
+          },
+          {
+            "name": "Transition",
+            "url": "uneimage.jpg",
+            "explanation":"La transition symbolise le passage d'une action à une autre. Les transitions peuvent être séquentielle (une action se termine une autre commence) ou conditionnée à une contrainte (indiquée en texte sur le symbole de la transtion)."
+          },
+          {
+            "name": "Selon ou Si",
+            "url": "uneimage.jpg",
+            "explanation":"Selon (ou Si) sert à faire le lien entre une action, et les actions dont les transitions sont conditionnées à une contrainte."
+          },
+          {
+            "name": "Synchronisation",
+            "url": "uneimage.jpg",
+            "explanation":"Une synchronisition peut être de deux type : conjonction (en entrée) ou disjonction (en sortie). Les actions comprises entre une conjonction et une disjonction doivent toutes avoir été réalisées pour passer à l'action suivante."
+          },
+          {
+            "name": "Itération",
+            "url": "uneimage.jpg",
+            "explanation":"L'itération est une transition qui pointe vers une action qui a déjà été effectuée, et qui prend son origine sur un Selon. Elle sert à représenter la répétition possible de certaines sequences du diagramme."
+          },
+          {
+            "name": "Rôle",
+            "url": "uneimage.jpg",
+            "explanation":"Les rôles permettent de décrire les acteurs qui effectueront certaines actions."
           }
         ],
         "example": {
@@ -296,13 +332,44 @@
         }
       },
       {
-        "id": "class1",
-        "title": "diagramme de classe",
-        "description": "Diagramme permettant de concevoir la base de données",
+        "id": "statetransition",
+        "title": "Diagramme d'état-transition",
+        "description": "Il décrit l’enchaînement de tous les états d’un objet. Il est propre à une classe donnée, il décrit les états des objets de cette classe, les événements auxquels ils réagissent, les transitions qu’ils effectuent. ",
         "elements": [
           {
-            "name": "le nom de l'élement",
-            "url": "uneimage.jpg"
+            "name": "Etat initial",
+            "url": "uneimage.jpg",
+            "explanation":"L'état initial indique le point de départ de l'activité"
+          },
+          {
+            "name": "Etat final",
+            "url": "uneimage.jpg",
+            "explanation":"L'état final indique le point de fin de l'activité"
+          },
+          {
+            "name": "Etat",
+            "url": "uneimage.jpg",
+            "explanation":"L'état d'un objet est défini par les valeurs de ses attributs. Il dépend de l'état précédent et de l'événement survenue"
+          },
+          {
+            "name": "Transition",
+            "url": "uneimage.jpg",
+            "explanation":"La transition symbolise le passage d'un état à un autre. On indique en texte l'événement qui fait passer l'objet d'un état à un autre"
+          },
+          {
+            "name": "Action et Activité",
+            "url": "uneimage.jpg",
+            "explanation":"Les activités permettent d'affiner l'état d'un objet en fonction d'une opération. l'action préfixe l'activité ('entry/, 'exit/', 'do/', 'nom_event/') afin de précision quel type d'action modifie l'état. "
+          },
+          {
+            "name": "Point de jonction",
+            "url": "uneimage.jpg",
+            "explanation":"Le point de jonction permet de représenter des partage de transition entre deux états."
+          },
+          {
+            "name": "Point de décision",
+            "url": "uneimage.jpg",
+            "explanation":""
           }
         ],
         "example": {
