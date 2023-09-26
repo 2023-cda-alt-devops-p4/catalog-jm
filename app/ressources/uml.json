@@ -9,42 +9,37 @@
         "elements": [
           {
             "name": "Classe",
-            "url": "uneimage.jpg",
-            "explanation":"Une classe est représentée par un rectangle séparé en trois parties : Le nom de la classe, ses attributs et ses méthodes. Les attributs et les méthodes représentent le comportement de la classe"
-          },
-          {
-            "name": "Visibilité Public",
-            "url": "uneimage.jpg",
-            "explanation":"Indique si un attribut ou une méthode est publique"
-          },
-          {
-            "name": "Visibilité Privée",
-            "url": "uneimage.jpg",
-            "explanation":"Indique si un attribut ou une méthode est privée"
+            "url": "public/img/uml/element/class_object/class.png",
+            "explanation":"Une classe est représentée par un rectangle séparé en trois parties : Le nom de la classe, ses attributs et ses méthodes. Les attributs et les méthodes représentent le comportement de la classe, et leur visibilité est indiquée de la manière suivante : (-) Privé, ( + ) Publique, ( # ) Protégée"
           },
           {
             "name": "Relation d'Association",
-            "url": "uneimage.jpg",
-            "explanation":"Relation entre deux classes qui décrit les connexions entre leurs instances"
+            "url": "public/img/uml/element/class_object/association.png",
+            "explanation":"Relation entre deux classes qui décrit les connexions entre leurs instances. Des multiplicités (cardinilalités) déclarent le nombre d'objet susceptible d'occuper la position définit par l'association : exactement 1 (1..1), plusieurs (0..*), au moins 1 (1..*) ou un écart spécifique (1..6)"
+          },
+          {
+            "name": "Navigabilité",
+            "url": "public/img/uml/element/class_object/navigability.png",
+            "explanation":"Permet de privilégier un sens de lecture spécifique d'un relation d'association"
           },
           {
             "name": "Relation d'Héritage",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/class_object/heritage.png",
             "explanation": " L’héritage est la relation entre une classe fille qui hérite des attributs et méthodes d’une classe mère. La flèche va de la fille vers la mère. Les classes abstraites sont représentée avec un titre en italique"
           },
           {
             "name": "Relation d'Agrégation",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/class_object/aggregation.png",
             "explanation": "Une agrégation représente une relation où une classe dépend d’une autre, mais si cette dernière est détruite, la première ne le sera pas."
           },
           {
             "name": "Relation de Composition",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/class_object/composition.png",
             "explanation": "Une composition représente une relation où une classe dépend d’autre, et si cette dernière est détruite, les autres le sont aussi."
           },
           {
             "name": "Relation de Dépendance",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/class_object/dependence.png",
             "explanation": "Une dépendance est relation unidirectionnelle entre deux classes. Elle indique que la modification de la cible peut impliquer une modification de la source."
           }
         ],
@@ -59,43 +54,38 @@
         "description": "Un diagramme d’objet représente une instance spécifique d’un diagramme de classes à un moment précis. Il peut être utilisé pour illustrer le modèle de classe en montrant un exemple qui explique le modèle.",
         "elements": [
           {
-            "name": "Classe",
-            "url": "uneimage.jpg",
-            "explanation":"Une classe est représentée par un rectangle séparé en trois parties : Le nom de la classe, ses attributs et ses méthodes. Les attributs et les méthodes représentent le comportement de la classe"
-          },
-          {
-            "name": "Visibilité Public",
-            "url": "uneimage.jpg",
-            "explanation":"Indique si un attribut ou une méthode est publique"
-          },
-          {
-            "name": "Visibilité Privée",
-            "url": "uneimage.jpg",
-            "explanation":"Indique si un attribut ou une méthode est privée"
+            "name": "Objet",
+            "url": "public/img/uml/element/class_object/class.png",
+            "explanation":"Un objet est représenté par un rectangle séparé en trois parties : Le nom de la classe, ses attributs et ses méthodes. Les attributs et les méthodes représentent le comportement de la classe, et leur visibilité est indiquée de la manière suivante : (-) Privé, ( + ) Publique, ( # ) Protégée"
           },
           {
             "name": "Relation d'Association",
-            "url": "uneimage.jpg",
-            "explanation":"Relation entre deux classes qui décrit les connexions entre leurs instances"
+            "url": "public/img/uml/element/class_object/association.png",
+            "explanation":"Relation entre deux classes qui décrit les connexions entre leurs instances. Des multiplicités (cardinilalités) déclarent le nombre d'objet susceptible d'occuper la position définit par l'association : exactement 1 (1..1), plusieurs (0..*), au moins 1 (1..*) ou un écart spécifique (1..6)"
+          },
+          {
+            "name": "Navigabilité",
+            "url": "public/img/uml/element/class_object/navigability.png",
+            "explanation":"Permet de privilégier un sens de lecture spécifique d'un relation d'association"
           },
           {
             "name": "Relation d'Héritage",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/class_object/heritage.png",
             "explanation": " L’héritage est la relation entre une classe fille qui hérite des attributs et méthodes d’une classe mère. La flèche va de la fille vers la mère. Les classes abstraites sont représentée avec un titre en italique"
           },
           {
             "name": "Relation d'Agrégation",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/class_object/aggregation.png",
             "explanation": "Une agrégation représente une relation où une classe dépend d’une autre, mais si cette dernière est détruite, la première ne le sera pas."
           },
           {
             "name": "Relation de Composition",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/class_object/composition.png",
             "explanation": "Une composition représente une relation où une classe dépend d’autre, et si cette dernière est détruite, les autres le sont aussi."
           },
           {
             "name": "Relation de Dépendance",
-            "url": "uneimage.jpg",
+            "url": "public/img/uml/element/class_object/dependence.png",
             "explanation": "Une dépendance est relation unidirectionnelle entre deux classes. Elle indique que la modification de la cible peut impliquer une modification de la source."
           }
         ],
@@ -156,6 +146,11 @@
         "title": "Diagramme de paquetages",
         "description": "Un paquetage est une collection d’éléments du modèle : il peut contenir les collections des Uses Cases ou des classes et les relations qui les lient entre eux.Les paquetage peuvent être utilisés dans n’importe quelle vue ou diagramme UML Un paquetage et un espace de nom qui peut posséder des interfaces. Il peut exister des dépendances entre les paquetages et entre les éléments d’un même paquetage. Le diagramme de paquetage sert à organiser les fonctionnalités et à avoir une vision claire des dépendances.",
         "elements": [
+          {
+            "name": "Package",
+            "url": "uneimage.jpg",
+            "explanation": "Représentation d'un paquetage"
+          },
           {
             "name": "access",
             "url": "uneimage.jpg",
@@ -505,10 +500,6 @@
         "title": "Diagramme d'intéractivité'",
         "description": "Le diagramme d'interactivité est utilisé pour la représentation de système complexe. Il s'agit d'un variante du diagramme d'activité qui permet une vue d'ensemble des flux de contrôle. Les noeuds sont des diagrammes de séquence et des diagrammes d'activité. Les éléments constitutifs sont les mêmes que ces derniers.",
         "elements": [
-          {
-            "name": "le nom de l'élement",
-            "url": "uneimage.jpg"
-          }
         ],
         "example": {
           "url": "exampleimage.jpg",
