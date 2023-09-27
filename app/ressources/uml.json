@@ -9,42 +9,42 @@
         "elements": [
           {
             "name": "Classe",
-            "url": "/img/uml/element/class_object/class.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/class.png",
             "explanation":"Une classe est représentée par un rectangle séparé en trois parties : Le nom de la classe, ses attributs et ses méthodes. Les attributs et les méthodes représentent le comportement de la classe, et leur visibilité est indiquée de la manière suivante : (-) Privé, ( + ) Publique, ( # ) Protégée"
           },
           {
             "name": "Relation d'Association",
-            "url": "/img/uml/element/class_object/association.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/association.png",
             "explanation":"Relation entre deux classes qui décrit les connexions entre leurs instances. Des multiplicités (cardinilalités) déclarent le nombre d'objet susceptible d'occuper la position définit par l'association : exactement 1 (1..1), plusieurs (0..*), au moins 1 (1..*) ou un écart spécifique (1..6)"
           },
           {
             "name": "Navigabilité",
-            "url": "/img/uml/element/class_object/navigability.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/navigability.png",
             "explanation":"Permet de privilégier un sens de lecture spécifique d'un relation d'association"
           },
           {
             "name": "Relation d'Héritage",
-            "url": "/img/uml/element/class_object/heritage.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/heritage.png",
             "explanation": " L’héritage est la relation entre une classe fille qui hérite des attributs et méthodes d’une classe mère. La flèche va de la fille vers la mère. Les classes abstraites sont représentée avec un titre en italique"
           },
           {
             "name": "Relation d'Agrégation",
-            "url": "/img/uml/element/class_object/aggregation.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/aggregation.png",
             "explanation": "Une agrégation représente une relation où une classe dépend d’une autre, mais si cette dernière est détruite, la première ne le sera pas."
           },
           {
             "name": "Relation de Composition",
-            "url": "/img/uml/element/class_object/composition.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/composition.png",
             "explanation": "Une composition représente une relation où une classe dépend d’autre, et si cette dernière est détruite, les autres le sont aussi."
           },
           {
             "name": "Relation de Dépendance",
-            "url": "/img/uml/element/class_object/dependence.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/dependence.png",
             "explanation": "Une dépendance est relation unidirectionnelle entre deux classes. Elle indique que la modification de la cible peut impliquer une modification de la source."
           }
         ],
         "example": {
-          "url": "/img/uml/example/class.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/class.png",
           "details": "Ce diagramme montre les classes utilisées dans un système de boutique en ligne. Nous pouvons voir les différentes multiplicités sur les associations, ainsi que différentes relation de composition vers la classe 'Account'. Ceci implique que la destruction de cette classe détruira les classes associées."
         }
       },
@@ -55,42 +55,42 @@
         "elements": [
           {
             "name": "Objet",
-            "url": "/img/uml/element/class_object/class.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/class.png",
             "explanation":"Un objet est représenté par un rectangle séparé en trois parties : Le nom de la classe, ses attributs et ses méthodes. Les attributs et les méthodes représentent le comportement de la classe, et leur visibilité est indiquée de la manière suivante : (-) Privé, ( + ) Publique, ( # ) Protégée"
           },
           {
             "name": "Relation d'Association",
-            "url": "/img/uml/element/class_object/association.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/association.png",
             "explanation":"Relation entre deux classes qui décrit les connexions entre leurs instances. Des multiplicités (cardinilalités) déclarent le nombre d'objet susceptible d'occuper la position définit par l'association : exactement 1 (1..1), plusieurs (0..*), au moins 1 (1..*) ou un écart spécifique (1..6)"
           },
           {
             "name": "Navigabilité",
-            "url": "/img/uml/element/class_object/navigability.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/navigability.png",
             "explanation":"Permet de privilégier un sens de lecture spécifique d'un relation d'association"
           },
           {
             "name": "Relation d'Héritage",
-            "url": "/img/uml/element/class_object/heritage.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/heritage.png",
             "explanation": " L’héritage est la relation entre une classe fille qui hérite des attributs et méthodes d’une classe mère. La flèche va de la fille vers la mère. Les classes abstraites sont représentée avec un titre en italique"
           },
           {
             "name": "Relation d'Agrégation",
-            "url": "/img/uml/element/class_object/aggregation.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/aggregation.png",
             "explanation": "Une agrégation représente une relation où une classe dépend d’une autre, mais si cette dernière est détruite, la première ne le sera pas."
           },
           {
             "name": "Relation de Composition",
-            "url": "/img/uml/element/class_object/composition.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/composition.png",
             "explanation": "Une composition représente une relation où une classe dépend d’autre, et si cette dernière est détruite, les autres le sont aussi."
           },
           {
             "name": "Relation de Dépendance",
-            "url": "/img/uml/element/class_object/dependence.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/class_object/dependence.png",
             "explanation": "Une dépendance est relation unidirectionnelle entre deux classes. Elle indique que la modification de la cible peut impliquer une modification de la source."
           }
         ],
         "example": {
-          "url": "/img/uml/example/object.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/object.png",
           "details": "Ce diagramme d'objet montre les instances d'un système de connexion à un compte utlisateur. Les visibilités des différentes méthodes et attributs sont représentées. La navigabilité entre les objets indiquent quel objet utilise un autre."
         }
       },
@@ -101,22 +101,22 @@
         "elements": [
           {
             "name": "Classificateur",
-            "url": "/img/uml/element/composite/classificateur.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/composite/classificateur.png",
             "explanation": "Elément de modèle qui décrit des caractéristiques structurelles et comportementales."
           },
           {
             "name": "Port",
-            "url": "/img/uml/element/composite/port.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/composite/port.png",
             "explanation": "Point d’interaction entre le classificateur et son environnement, entre le classificateurs et ses parties internes (les ports correspondent à des méthodes)"
           },
           {
             "name": "Parties",
-            "url": "/img/uml/element/composite/partie.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/composite/partie.png",
             "explanation": "Permet de définir une zone bien délimitée à l’intérieur d’une classe ou d’un composant. Les parties peuvent être connectées aux autres parties ou port, soit directement, soit via un port situé à l’extérieur de la partie."
           }
         ],
         "example": {
-          "url": "/img/uml/example/composite-structure.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/composite-structure.png",
           "details": "Ce diagramme montre la structure composite d'un distributeur de billet. Il y a 2 classificateur (Bank et Vault, qui est une partie de Bank). La partie Modem possède un port relié à une interface requise pour son fonctionnement."
         }
       },
@@ -127,17 +127,17 @@
         "elements": [
           {
             "name": "Composant",
-            "url": "/img/uml/element/composant/composant.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/composant/composant.png",
             "explanation" : "Un composant est un élément physique qui représente une parti d’un système, par exemple du code, un script, un fichier de données, une table…"
           },
           {
             "name": "Interface",
-            "url": "/img/uml/element/composant/interface.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/composant/interface.png",
             "explanation" : "Les interfaces peuvent être implémentée par le composant (réalisée par le composant, par un de ses classificateurs, ou fourni par un port public. Il peut aussi nécessiter une interface (soit tout le composant, soit un de ses classificateurs soit un de ses ports publics). Une interface peut être requise ou implémentée."
           }
         ],
         "example": {
-          "url": "/img/uml/example/component.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/component.png",
           "details": "Ce diagramme de composant pour une boutique ligne montre les différents éléments phyisque à son fonctionnement. Ces composants contiennent d'autres composants internes, et sont reliés entre eux via des interfaces"
         }
       },
@@ -148,32 +148,32 @@
         "elements": [
           {
             "name": "Package",
-            "url": "/img/uml/element/package/package.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/package/package.png",
             "explanation": "Représentation d'un paquetage"
           },
           {
             "name": "access",
-            "url": "/img/uml/element/package/access.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/package/access.png",
             "explanation": "Tout élément public de B est accessible par son complet depuis A; Les éléements de A ont accès aux éléments public de B."
           },
           {
             "name": "import",
-            "url": "/img/uml/element/package/import.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/package/import.png",
             "explanation": "Tout élément public de B est accessible par son nom depuis A, 'comme si' les éléments de B étaient dans A."
           },
           {
             "name": "use",
-            "url": "/img/uml/element/package/use.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/package/use.png",
             "explanation": "Il existe au moins un élément de A qui a besoin d'un élément de B."
           },
           {
             "name": "merge",
-            "url": "/img/uml/element/package/merge.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/package/merge.png",
             "explanation": "Le contenu du package 1 fusionne avec celui de B (équivaut à une généralisation, B est le package 'père'"
           }
         ],
         "example": {
-          "url": "/img/uml/example/package.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/package.png",
           "details": "Ceci est le diagramme de package d'un système multicouche. Il décrit les dépendances entre chaque package, on peut aussi y voir des packages contenu à l'interieur d'autres package et les relations de dépendances qu'ils ont entre eux."
         }
       },
@@ -184,22 +184,22 @@
         "elements": [
           {
             "name": "Noeud",
-            "url": "/img/uml/element/deploiement/noeud.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/deploiement/noeud.png",
             "explanation": "Un noeud est un élément physique qui existe pendant l'exécution. Il a un nom qui permet de le distinguer des autres et peut être associé à un stéréotype qui permet de distinguer"
           },
           {
             "name": "Composant",
-            "url": "/img/uml/element/deploiement/composant.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/deploiement/composant.png",
             "explanation" : "Un composant est un élément physique qui représente une parti d’un système, par exemple du code, un script, un fichier de données, une table…"
           },
           {
             "name": "Relation de Dépendance",
-            "url": "/img/uml/element/deploiement/dependence.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/deploiement/dependence.png",
             "explanation": "Une dépendance est relation unidirectionnelle entre deux classes. Elle indique que la modification de la cible peut impliquer une modification de la source."
           }
         ],
         "example": {
-          "url": "/img/uml/example/deployment.jpg",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/deployment.jpg",
           "details": "Ce diagramme de déploiement montre les éléments physiques qui sont éxecutés lorsqu'un utilisateur navigue sur un site web."
         }
       },
@@ -210,22 +210,22 @@
         "elements": [
           {
             "name": "Profil",
-            "url": "/img/uml/element/profile/profil.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/profile/profil.png",
             "explanation": "Classificateur nommé qui regroupe toutes les particularités décrites"
           },
           {
             "name": "Méta-classe",
-            "url": "/img/uml/element/profile/metaclass.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/profile/metaclass.png",
             "explanation": "Profil de classe qui peut être étendu par des stéréotypes"
           },
           {
             "name": "Stéréotypes",
-            "url": "/img/uml/element/profile/stereotype.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/profile/stereotype.png",
             "explanation": "Un stéréotype est un profil de classe qui précise de quelle manière une méta-classe peut être étendue"
           }
         ],
         "example": {
-          "url": "/img/uml/example/profile.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/profile.png",
           "details": "Un exemple de profil de type méta-classe qui montre leurs extensions possible via des profils de stéréotypes."
         }
       }
@@ -241,37 +241,37 @@
         "elements": [
           {
             "name": "Système",
-            "url": "/img/uml/element/usecase/system.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/usecase/system.png",
             "explanation": "Représente le système de l'application présentée dans le diagramme"
           },
           {
             "name": "Acteur",
-            "url": "/img/uml/element/usecase/actor.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/usecase/actor.png",
             "explanation": "Les acteurs peuvent être humain, logiciel ou matériel. Il peut jouer plusieurs rôles. Il peut y avoir des acteurs principaux et secondaires, et un acteur peut être une spécialisation d'un autre acteur"
           },
           {
             "name": "Cas d'utilisation",
-            "url": "/img/uml/element/usecase/usecase.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/usecase/usecase.png",
             "explanation": "Le cas d'utilisation est une action qui peut effectuer le système. Il peut être une action de l'utilisation, ou une réaction à un autre cas d'utilisation."
           },
           {
             "name": "Relation d'inclusion",
-            "url": "/img/uml/element/usecase/include.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/usecase/include.png",
             "explanation": "Une relation d'inclusion est une relation de dépendance forte entre deux actions. L'action vers laquelle le pointeur est dirigé ne peut être effectuée qui si l'action d'où le pointeur prend son origine à été réalisée."
           },
           {
             "name": "Relation d'exclusion",
-            "url": "/img/uml/element/usecase/extend.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/usecase/extend.png",
             "explanation": "Une relation d'exclusion est relation de dépendance faible entre deux actions. L'action vers laquelle le pointeur est dirigée peut être effectuée à partir de l'action d'où le pointeur prend son origine, mais n'est pas obligatoire."
           },
           {
             "name": "Relation d'héritage",
-            "url": "/img/uml/element/usecase/heritage.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/usecase/heritage.png",
             "explanation": "Utilisée entre les acteurs, cette relation permet de définir une spécialisation d'un acteur par rapport à l'acteur dont il hérite. Utilisée entre les cas d'utilisation, il représente les options du cas d'utilisation dont ils héritent"
           }
         ],
         "example": {
-          "url": "/img/uml/example/use-case.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/use-case.png",
           "details": "Ce diagramme représente le système où des passagers désirent prendre l'avion. Nous pouvons y voir les relations d'héritage entre les acteurs"
         }
       },
@@ -282,47 +282,47 @@
         "elements": [
           {
             "name": "Etat initial",
-            "url": "/img/uml/element/activity/start.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/activity/start.png",
             "explanation":"L'état initial indique le point de départ de l'activité"
           },
           {
             "name": "Etat final",
-            "url": "/img/uml/element/activity/end.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/activity/end.png",
             "explanation":"L'état final indique le point de fin de l'activité"
           },
           {
             "name": "Action",
-            "url": "/img/uml/element/activity/action.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/activity/action.png",
             "explanation":"Une action est un élément représentant une partie de l'activité"
           },
           {
             "name": "Transition",
-            "url": "/img/uml/element/activity/transition.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/activity/transition.png",
             "explanation":"La transition symbolise le passage d'une action à une autre. Les transitions peuvent être séquentielle (une action se termine une autre commence) ou conditionnée à une contrainte (indiquée en texte sur le symbole de la transtion)."
           },
           {
             "name": "Selon ou Si",
-            "url": "/img/uml/element/activity/selon.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/activity/selon.png",
             "explanation":"Selon (ou Si) sert à faire le lien entre une action, et les actions dont les transitions sont conditionnées à une contrainte."
           },
           {
             "name": "Synchronisation",
-            "url": "/img/uml/element/activity/synchronisation.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/activity/synchronisation.png",
             "explanation":"Une synchronisition peut être de deux type : conjonction (en entrée) ou disjonction (en sortie). Les actions comprises entre une conjonction et une disjonction doivent toutes avoir été réalisées pour passer à l'action suivante."
           },
           {
             "name": "Itération",
-            "url": "/img/uml/element/activity/iteration.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/activity/iteration.png",
             "explanation":"L'itération est une transition qui pointe vers une action qui a déjà été effectuée, et qui prend son origine sur un Selon. Elle sert à représenter la répétition possible de certaines sequences du diagramme."
           },
           {
             "name": "Rôle",
-            "url": "/img/uml/element/activity/role.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/activity/role.png",
             "explanation":"Les rôles permettent de décrire les acteurs qui effectueront certaines actions."
           }
         ],
         "example": {
-          "url": "/img/uml/example/activity.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/activity.png",
           "details": "Ce diagramme d'activité décrit le processus d'achat d'un ticket pour l'utilisation d'un transport sur une borne. On y voit les différentes étapes, de la sélection du ticket jusqu'à l'édition de ce dernier, en passant par le paiement, en carte ou en liquide."
         }
       },
@@ -333,57 +333,57 @@
         "elements": [
           {
             "name": "Etat initial",
-            "url": "/img/uml/element/statetransition/start.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/start.png",
             "explanation":"L'état initial indique le point de départ de l'activité"
           },
           {
             "name": "Etat final",
-            "url": "/img/uml/element/statetransition/end.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/end.png",
             "explanation":"L'état final indique le point de fin de l'activité"
           },
           {
             "name": "Etat",
-            "url": "/img/uml/element/statetransition/etat.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/etat.png",
             "explanation":"L'état d'un objet est défini par les valeurs de ses attributs. Il dépend de l'état précédent et de l'événement survenue"
           },
           {
             "name": "Transition",
-            "url": "/img/uml/element/statetransition/transition.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/transition.png",
             "explanation":"La transition symbolise le passage d'un état à un autre. On indique en texte l'événement qui fait passer l'objet d'un état à un autre"
           },
           {
             "name": "Action et Activité",
-            "url": "/img/uml/element/statetransition/action.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/action.png",
             "explanation":"Les activités permettent d'affiner l'état d'un objet en fonction d'une opération. l'action préfixe l'activité ('entry/, 'exit/', 'do/', 'nom_event/') afin de précision quel type d'action modifie l'état. "
           },
           {
             "name": "Point de jonction",
-            "url": "/img/uml/element/statetransition/jonction.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/jonction.png",
             "explanation":"Le point de jonction permet de représenter des partage de transition entre deux états."
           },
           {
             "name": "Etat composite",
-            "url": "/img/uml/element/statetransition/composite.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/composite.png",
             "explanation":"L'état composite est un état qui contient d'autres sous états"
           },
           {
             "name": "Le pseudo état historique",
-            "url": "/img/uml/element/statetransition/historique.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/historique.png",
             "explanation":"Une transition ayant pour cible l’état historique est équivalente à une transition ayant pour cible le dernier état visité dans la région contenant pseudo-état historique."
           },
           {
             "name": "Etat concurrent",
-            "url": "/img/uml/element/statetransition/concurrent.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/concurrent.png",
             "explanation":"L'état concurrent exprime la possibilité d'un objet a se trouver dans plusieurs états"
           },
           {
             "name": "Transition concurrente",
-            "url": "/img/uml/element/statetransition/transconcurrente.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/statetransition/transconcurrente.png",
             "explanation":"La transition concurrente peut être de type conjonction (en entrée) ou disjonction (en sortie). Elle se positionne en début et fin d'un état concurrent."
           }
         ],
         "example": {
-          "url": "/img/uml/example/state.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/state.png",
           "details": "Ce diagramme décrit les différents états que peut avoir un distributeur automatique de billets. On y voit le processus d'allumage du distributeur, l'état si il y a eu un dysfonctionnement. Il y est aussi définit l'état composite lorsque l'appareil est utilisé, avec les activités et les actions le concernant."
         }
       },
@@ -394,47 +394,47 @@
         "elements": [
           {
             "name": "Objet",
-            "url": "/img/uml/element/sequence/objet.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/sequence/objet.png",
             "explanation": "Représentation d'un objet jouant un rôle dans une instance de cas l'utilisation"
           },
           {
             "name": "Ligne de vie",
-            "url": "/img/uml/element/sequence/lignevie.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/sequence/lignevie.png",
             "explanation": "Représente la durée de vie d'un objet dans la séquence."
           },
           {
             "name": "Période d'activité",
-            "url": "/img/uml/element/sequence/peractivite.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/sequence/peractivite.png",
             "explanation": "La période d’activité correspond an temps pendant lequel un objet fait une action."
           },
           {
             "name": "Message Synchrone",
-            "url": "/img/uml/element/sequence/synchrone.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/sequence/synchrone.png",
             "explanation": "Le message est orienté de l'emetteur au recepteur, et déclenche une opération. Il bloque l'emetteur jusqu'à la prise en compte du message par le recepteur."
           },
           {
             "name": "Message Asynchrone",
-            "url": "/img/uml/element/sequence/asynchrone.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/sequence/asynchrone.png",
             "explanation": "Le message est orienté de l'emetteur au recepteur, et déclenche une opération. Il n'interrompt pas l'exécution de l'emetteur."
           },
           {
             "name": "Message reflexif",
-            "url": "/img/uml/element/sequence/reflexif.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/sequence/reflexif.png",
             "explanation": "Un message reflexif est un message qu'un objet envoie à lui-même."
           },
           {
             "name": "Destruction",
-            "url": "/img/uml/element/sequence/destruction.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/sequence/destruction.png",
             "explanation": "Exprime la destruction d'un objet après la reception d'un message."
           },
           {
             "name": "Cadre d'interaction",
-            "url": "/img/uml/element/sequence/interaction.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/sequence/interaction.png",
             "explanation": "Le cadre d'interaction permet de tester un échange de message en fonction d'un opérateur. Les opérateurs fondamentaux sont 'opt' (indique si une séquence peut se produire ou non), 'alt' (une seule des séquences peut se produire) et 'loop' (permet de répéter un fragment un certain nombre de fois en fonction d'une condition)"
           }
         ],
         "example": {
-          "url": "/img/uml/example/sequence.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/sequence.png",
           "details": "Ce diagramme de séquence montre les interactions d'un utilisation avec une librairie en ligne. Des cadres d'intéractions notamment un cadre qui définit une boucle sur la recherche d'ouvrage, ainsi que des cadres qui expriment la possibilité ou non de consulter la fiche ou de commander un livre."
         }
       },
@@ -445,27 +445,27 @@
         "elements": [
           {
             "name": "Objet",
-            "url": "/img/uml/element/communication/objet.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/communication/objet.png",
             "explanation": "Représentation d'un objet jouant un rôle dans le diagramme de séquence. Les objets peuvent être créés ou détruits au cous d'un interface, et porter respectivement les stéréotypes <<créé>> ou <<détruit>>."
           },
           {
             "name": "Message ",
-            "url": "/img/uml/element/communication/transition.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/communication/transition.png",
             "explanation": "Le message est orienté de l'emetteur au recepteur, et déclenche une opération. Les messages sont numérotés pour organiser l'ordre d'exécution."
           },
           {
             "name": "Acteur",
-            "url": "/img/uml/element/communication/actor.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/communication/actor.png",
             "explanation": "Les acteurs peuvent être humain, logiciel ou matériel."
           },
           {
             "name": "Contrainte",
-            "url": "/img/uml/element/communication/contrainte.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/communication/contrainte.png",
             "explanation": "Un message peut être préfixé par une contrainte pour définir son cadre d'exécution."
           }
         ],
         "example": {
-          "url": "/img/uml/example/communication.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/communication.png",
           "details": "Ce diagramme de communication montre les interactions entre les objets dans le processus d'un acteur souhaitant consulter une librairire en ligne. Les messages sont numérotés pour définir l'ordre, et des contraintes sont appliquées sur certaines méthodes."
         }
       },
@@ -476,22 +476,22 @@
         "elements": [
           {
             "name": "Ligne de vie",
-            "url": "/img/uml/element/time/vie.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/time/vie.png",
             "explanation": "Représente la vie d'un objet"
           },
           {
             "name": "Etat",
-            "url": "/img/uml/element/time/etat.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/time/etat.png",
             "explanation": "Indique l'état d'un objet."
           },
           {
             "name": "Durée",
-            "url": "/img/uml/element/time/duree.png",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/element/time/duree.png",
             "explanation": "Permet d'exprimer une durée de spécifique à un état de l'objet."
           }
         ],
         "example": {
-          "url": "/img/uml/example/timing.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/timing.png",
           "details": "Ce diagramme de temps exprime les différents états d'une personne atteinte de la maladie d'Alzheimer."
         }
       },
@@ -502,7 +502,7 @@
         "elements": [
         ],
         "example": {
-          "url": "/img/uml/example/interaction.png",
+          "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/uml/example/interaction.png",
           "details": "Ce diagramme d'interactivité exprime le processus de validation d'un message posté par un utilisateur dans une section de commentaire. Il mélange le diagramme d'activité définissant si un message et valide ou non, et dans le cas ou il est valide, le diagramme est affiné en décrivant le processus d'enregistrement par un diagramme de séquence."
         }
       }

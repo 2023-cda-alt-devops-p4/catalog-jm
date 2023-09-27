@@ -8,12 +8,12 @@ const nobile = Nobile({
 })
 
 const UmlComponent = ({ item }) => {
-  const ratio = 16 / 9
+  const ratio = 16/9
   const elementImage = item.elements.map((el, i) => {
     return (
       <div key={i}>
         <p className={[nobile.className].join(' ')}>{el.name}</p>
-        <img
+        <Image
           src={el.url}
           width={150}
           height={200 / ratio}
@@ -33,10 +33,10 @@ const UmlComponent = ({ item }) => {
         {elementImage}
       </div>
       <div>
-        <img
+      <Image
           src={item.example.url}
-          width={500}
-          height={500 / ratio}
+          width={400}
+          height={400 / ratio}
           alt={item.title}
         />
         <p className={[nobile.className].join(' ')}>{item.example.details}</p>
