@@ -155,10 +155,76 @@
       "title": "Modèle organisationnel de données",
       "description":"Le modèle organisationnel de données est similaire au modèle conceptuel de données à la différence qu'il exprime uniquement les données concernées par un psote de précis de l'organigramme de l'entreprise. Il se construit exactement comme le MCD. Veuillez vous référer à ce dernier pour sa conception",
       "elements": [
+        {
+          "name":"Entité",
+          "url":"public/img/merise/element/mcd/entite.png",
+          "explanation":"Une entité est un ensemble d'information qui a une existence propre. Elle contient les informations qui seront enregistrées."
+        },
+        {
+          "name":"Relation",
+          "url":"public/img/merise/element/mcd/relation.png",
+          "explanation":"Les relations permettent de faire le lien entre deux ou plusieurs entités. Elle contient un verbe qui précise la relation qu'elles ont entre elles. Elle peut être porteuse d'information. Les liens entre les relations et les entités sont appelées des pattes."
+        },
+        {
+          "name":"Nomenclature",
+          "url":"public/img/merise/element/mcd/nomenclature.png",
+          "explanation":"Les nomenclatures sont un type de relation qui lie une entité avec elle-même."
+        },
+        {
+          "name":"Cardinalité",
+          "url":"public/img/merise/element/mcd/cardinalité.png",
+          "explanation":"Les cardinalités sont des contraintes qui précisent le nombre d'occurrence de relation possède une entité via une relation. Elle peuvent égale à 0, à 1 ou à N (nombre indéfini)"
+        },
+        {
+          "name":"OU inclusif",
+          "url":"public/img/merise/element/mcd/ou_inclusif.png",
+          "explanation":"Contrainte qui lie des relations qui permettent d'exprimer le fait qu'une entité peut être lié avec une ou toutes les entités auxquelles elle est rattaché concernées par la contrainte."
+        },
+        {
+          "name":"Exclusion",
+          "url":"public/img/merise/element/mcd/exclusion.png",
+          "explanation":"Contrainte qui lie des relations et qui exprime le fait que toutes les occurrences d'une entité auront la même relation avec une seule des entités concernées exclusivement."
+        },
+        {
+          "name":"Partition",
+          "url":"public/img/merise/element/mcd/partition.png",
+          "explanation":"Contrainte qui lie des relations et exprime le fait les occurrences d'une entité peut avoir une relation au choix avec une des entités qui sont concernées."
+        },
+        {
+          "name":"Inclusion",
+          "url":"public/img/merise/element/mcd/inclusion.png",
+          "explanation":"Contrainte qui lie des relations et qui exprime le fait qu'une entité à necessaire une relation avec toutes les entités concernées par la contrainte."
+        },
+        {
+          "name":"Ternaire",
+          "url":"public/img/merise/element/mcd/ternaire.png",
+          "explanation":"Relation qui lie trois entités. Une des pattes peut avoir une flèche qui permet d'exprimer l'unicité de l'entité indiquée par rapport au couple de la relation."
+        }
       ],
       "example": {
         "url":"public/img/merise/example/mod.png",
         "details":"Ici deux modèles pour la même entreprise mais pour des postes différents. Certaines entités sont uniques à chacun, tandis que d'autres sont partagées."
+      }
+    },
+    {
+      "id":"moc",
+      "title": "Modèle organisationnel de communication",
+      "description":"Le modèle organisationnel de communication exprime les échanges entre différents site de l'entreprise. Un échange à lieu quand un poste de travail situé sur un site donné effectue une opération et que la vue en consultation de cette oépration se trouve sur un autre site.",
+      "elements": [
+        {
+          "name":"Echange",
+          "url":"public/img/merise/element/moc/echange.png",
+          "explanation" :"Deux messages allant dans les sens opposés entre deux sites, accompagné d'un texte décrivant l'opération effectuée."
+        },
+        {
+          "name":"Site",
+          "url":"public/img/merise/element/moc/site.png",
+          "explanation" :"Représentation d'un site contenant le nom du site. Un site peut être constitué d'autres sites interne représentant les postes de travail spécifiques concernés si besoin."
+        }
+      ],
+      "example": {
+        "url":"public/img/merise/example/moc.png",
+        "details":"Ici la représentation de différents site d'une entreprise qui échange leurs informations concernant les process de réparation."
       }
     }
   ]
