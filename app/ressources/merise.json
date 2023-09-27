@@ -1,0 +1,369 @@
+[
+  {
+    "level": "Niveau conceptuel",
+    "models": [
+      {
+        "id": "mcc",
+        "title": "Modèle conceptuel de communication",
+        "description": "Approche du général au particulier, la méthode s’attache à identifier les échanges entre les systèmes. Le modèle de communication représente tous les flux et toute l’activité de l’entreprise. L’entreprise est considérée comme un système, et l’extérieur comme un ensemble de systèmes. L’entreprise est découpée en systèmes fonctionnels ou conceptuels.",
+        "elements": [
+          {
+            "name": "Système",
+            "url": "public/img/merise/element/mcc/systeme.png",
+            "explanation": "Le système représente l'organisme dans lequel nous nous positionnons pour la réalisation du modèle"
+          },
+          {
+            "name": "Intervenant",
+            "url": "public/img/merise/element/mcc/intervenant.png",
+            "explanation": "Les intervenants sont les systèmes fonctionnels du modèle. Ils peuvent être des partenaires (externes au système de l'entreprise) des domaines (internes) ou encore des sous-modèles (inclus dans un domaine interne)"
+          },
+          {
+            "name": "Message",
+            "url": "public/img/merise/element/mcc/message.png",
+            "explanation": "Les messages sont des flux contenants des informations. Il peut y avoir des messages enclencheur, qui attendent une réaction du receveur, ou des messages informations, qui renseignent sur une situation données"
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mcc.png",
+          "details": "Ce MCC montre les différents intervenants et les messages passés dans une entreprise qui livre des articles"
+        }
+      },
+      {
+        "id": "mct",
+        "title": "Modèle conceptuel de traitement",
+        "description": "Le modèle conceptuel de traitnement est un zoom sur un intervenant du MCC. Il détaille commen il traite l'information qu'il reçoit",
+        "elements": [
+          {
+            "name": "Message",
+            "url": "public/img/merise/element/mct/message.png",
+            "explanation": "Le message peut être un événement (reçu) ou un résultat (envoyé)"
+          },
+          {
+            "name": "Intervenant",
+            "url": "public/img/merise/element/mct/intervenant.png",
+            "explanation": "Représentation du domaine ou du sous-domaine que le souhaite détailler"
+          },
+          {
+            "name": "Opération",
+            "url": "public/img/merise/element/mct/operation.png",
+            "explanation": "L'opération décrit l'opération effectuée lors de la reception du message. Ce dernier peut comporter des conditions qui permettront d'envoyer un message différent en fonction des besoins"
+          },
+          {
+            "name": "Synchronisation",
+            "url": "public/img/merise/element/mct/synchronisation.png",
+            "explanation": "Plusieurs messages peuvent arriver dans une opération. La synchronisation permet de définir les conditions dans lesquels ces messages seront traités grâce à des opérateur logique ET/OU"
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mct.png",
+          "details": "Dans cet exemple concernant la prise de décision d'aller ou non au cinéma, l'opération reçoit plusieurs messages, la synchronisation nous informe sur les messages qui permettent d'accéder à l'opération."
+        }
+      },
+      {
+        "id": "mcd",
+        "title": "Modèle conceptuel de données",
+        "description": "Le modèle conceptuel de données permet d'avoir un premier aperçu de la manière dont les données seront organisées. On y définit les entités ainsi que les relations qu'elles ont entre elles.'",
+        "elements": [
+          {
+            "name": "Entité",
+            "url": "public/img/merise/element/mcd/entite.png",
+            "explanation": "Une entité est un ensemble d'information qui a une existence propre. Elle contient les informations qui seront enregistrées. Une information doit être défini comme clé unique à l'entité."
+          },
+          {
+            "name": "Relation",
+            "url": "public/img/merise/element/mcd/relation.png",
+            "explanation": "Les relations permettent de faire le lien entre deux ou plusieurs entités. Elle contient un verbe qui précise la relation qu'elles ont entre elles. Elle peut être porteuse d'information. Les liens entre les relations et les entités sont appelées des pattes."
+          },
+          {
+            "name": "Nomenclature",
+            "url": "public/img/merise/element/mcd/nomenclature.png",
+            "explanation": "Les nomenclatures sont un type de relation qui lie une entité avec elle-même."
+          },
+          {
+            "name": "Cardinalité",
+            "url": "public/img/merise/element/mcd/cardinalité.png",
+            "explanation": "Les cardinalités sont des contraintes qui précisent le nombre d'occurrence de relation possède une entité via une relation. Elle peuvent égale à 0, à 1 ou à N (nombre indéfini)"
+          },
+          {
+            "name": "OU inclusif",
+            "url": "public/img/merise/element/mcd/ou_inclusif.png",
+            "explanation": "Contrainte qui lie des relations qui permettent d'exprimer le fait qu'une entité peut être lié avec une ou toutes les entités auxquelles elle est rattaché concernées par la contrainte."
+          },
+          {
+            "name": "Exclusion",
+            "url": "public/img/merise/element/mcd/exclusion.png",
+            "explanation": "Contrainte qui lie des relations et qui exprime le fait que toutes les occurrences d'une entité auront la même relation avec une seule des entités concernées exclusivement."
+          },
+          {
+            "name": "Partition",
+            "url": "public/img/merise/element/mcd/partition.png",
+            "explanation": "Contrainte qui lie des relations et exprime le fait les occurrences d'une entité peut avoir une relation au choix avec une des entités qui sont concernées."
+          },
+          {
+            "name": "Inclusion",
+            "url": "public/img/merise/element/mcd/inclusion.png",
+            "explanation": "Contrainte qui lie des relations et qui exprime le fait qu'une entité à necessaire une relation avec toutes les entités concernées par la contrainte."
+          },
+          {
+            "name": "Ternaire",
+            "url": "public/img/merise/element/mcd/ternaire.png",
+            "explanation": "Relation qui lie trois entités. Une des pattes peut avoir une flèche qui permet d'exprimer l'unicité de l'entité indiquée par rapport au couple de la relation."
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mcd.png",
+          "details": "Ce modèle conceptuelle de donnée montre les entités et les relations lors d'un processus de facturation après une commande par un client."
+        }
+      }
+    ]
+  },
+  {
+    "level": "Niveau organisationnel",
+    "models": [
+      {
+        "id": "mot",
+        "title": "Modèle organisationnel de traitement",
+        "description": "Le modèle organisationnel de traitement permet d'exprimer comment chaque poste de travail traite un message entrant dans l'organisation. On parle de procédure pour exprimer l'acheminement des actions et réactions entre les différents poste de travail.",
+        "elements": [
+          {
+            "name": "Poste de travail",
+            "url": "public/img/merise/element/mot/poste.png",
+            "explanation": "Les postes de travail sont définis dans un tableau avec des colonnes qui respectent l'organigramme de l'entreprise."
+          },
+          {
+            "name": "Message",
+            "url": "public/img/merise/element/mot/message.png",
+            "explanation": "Les messages font le lien entre les différentes opérations. Le message enclenchant la procédure est appelé un message événement mais n'est pas obligatoire."
+          },
+          {
+            "name": "Opération",
+            "url": "public/img/merise/element/mot/operation.png",
+            "explanation": "L'opération décrit l'opération effectuée lors de la reception du message. Ce dernier peut comporter des conditions qui permettront d'envoyer un message différent en fonction des besoins"
+          },
+          {
+            "name": "Temporisateur",
+            "url": "public/img/merise/element/mot/temporisateur.png",
+            "Explanation": "L'opérateur peut être enclenchée de manière périodique par un temporisateur."
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mot.png",
+          "details": "Ce modèle organisationnel de traitement montre le processus de décision de réparation d'un matériel et le passage de la décision au niveau hiérachique supérieur en fonction du montant de l'opération."
+        }
+      },
+      {
+        "id": "mod",
+        "title": "Modèle organisationnel de données",
+        "description": "Le modèle organisationnel de données est similaire au modèle conceptuel de données à la différence qu'il exprime uniquement les données concernées par un psote de précis de l'organigramme de l'entreprise. Il se construit exactement comme le MCD. Veuillez vous référer à ce dernier pour sa conception",
+        "elements": [
+          {
+            "name": "Entité",
+            "url": "public/img/merise/element/mcd/entite.png",
+            "explanation": "Une entité est un ensemble d'information qui a une existence propre. Elle contient les informations qui seront enregistrées. Une information doit être défini comme clé unique à l'entité."
+          },
+          {
+            "name": "Relation",
+            "url": "public/img/merise/element/mcd/relation.png",
+            "explanation": "Les relations permettent de faire le lien entre deux ou plusieurs entités. Elle contient un verbe qui précise la relation qu'elles ont entre elles. Elle peut être porteuse d'information. Les liens entre les relations et les entités sont appelées des pattes."
+          },
+          {
+            "name": "Nomenclature",
+            "url": "public/img/merise/element/mcd/nomenclature.png",
+            "explanation": "Les nomenclatures sont un type de relation qui lie une entité avec elle-même."
+          },
+          {
+            "name": "Cardinalité",
+            "url": "public/img/merise/element/mcd/cardinalité.png",
+            "explanation": "Les cardinalités sont des contraintes qui précisent le nombre d'occurrence de relation possède une entité via une relation. Elle peuvent égale à 0, à 1 ou à N (nombre indéfini)"
+          },
+          {
+            "name": "OU inclusif",
+            "url": "public/img/merise/element/mcd/ou_inclusif.png",
+            "explanation": "Contrainte qui lie des relations qui permettent d'exprimer le fait qu'une entité peut être lié avec une ou toutes les entités auxquelles elle est rattaché concernées par la contrainte."
+          },
+          {
+            "name": "Exclusion",
+            "url": "public/img/merise/element/mcd/exclusion.png",
+            "explanation": "Contrainte qui lie des relations et qui exprime le fait que toutes les occurrences d'une entité auront la même relation avec une seule des entités concernées exclusivement."
+          },
+          {
+            "name": "Partition",
+            "url": "public/img/merise/element/mcd/partition.png",
+            "explanation": "Contrainte qui lie des relations et exprime le fait les occurrences d'une entité peut avoir une relation au choix avec une des entités qui sont concernées."
+          },
+          {
+            "name": "Inclusion",
+            "url": "public/img/merise/element/mcd/inclusion.png",
+            "explanation": "Contrainte qui lie des relations et qui exprime le fait qu'une entité à necessaire une relation avec toutes les entités concernées par la contrainte."
+          },
+          {
+            "name": "Ternaire",
+            "url": "public/img/merise/element/mcd/ternaire.png",
+            "explanation": "Relation qui lie trois entités. Une des pattes peut avoir une flèche qui permet d'exprimer l'unicité de l'entité indiquée par rapport au couple de la relation."
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mod.png",
+          "details": "Ici deux modèles pour la même entreprise mais pour des postes différents. Certaines entités sont uniques à chacun, tandis que d'autres sont partagées."
+        }
+      },
+      {
+        "id": "moc",
+        "title": "Modèle organisationnel de communication",
+        "description": "Le modèle organisationnel de communication exprime les échanges entre différents site de l'entreprise. Un échange à lieu quand un poste de travail situé sur un site donné effectue une opération et que la vue en consultation de cette oépration se trouve sur un autre site.",
+        "elements": [
+          {
+            "name": "Echange",
+            "url": "public/img/merise/element/moc/echange.png",
+            "explanation": "Deux messages allant dans les sens opposés entre deux sites, accompagné d'un texte décrivant l'opération effectuée."
+          },
+          {
+            "name": "Site",
+            "url": "public/img/merise/element/moc/site.png",
+            "explanation": "Représentation d'un site contenant le nom du site. Un site peut être constitué d'autres sites interne représentant les postes de travail spécifiques concernés si besoin."
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/moc.png",
+          "details": "Ici la représentation de différents site d'une entreprise qui échange leurs informations concernant les process de réparation."
+        }
+      }
+    ]
+  },
+  {
+    "level": "Niveau logique",
+    "models": [
+      {
+        "id": "mld",
+        "title": "Modèle logique de données",
+        "description": "Le modèle logique de données est un passage depuis le modèle le modèle conceptuel (ou organisationnel) de données vers un modèle qui définie la structure qui prendra la base de données dans un système de gestion de base de données relationnelle. Des règles définissent la manière dont la conversion doit se faire.",
+        "elements": [
+          {
+            "name": "Relation de type 1 - 1",
+            "url": "",
+            "explanation": "Lors de la conversion vers le MLD, les deux entités échangent leur clé primaire."
+          },
+          {
+            "name": "Relation de type 1 - N",
+            "url": "",
+            "explanation": "Lors de la conversion vers le MLD, la clé primaire de l'entité 1 est injectée dans l'entité N"
+          },
+          {
+            "name": "Relation de type N - N",
+            "url": "",
+            "explanation": "Lors de la conversion vers le MLD, une table intermédiaire est créée contenant une clé primaire propre à la table ainsi que les clés primaire de chacune des autres tables."
+          },
+          {
+            "name": "Table",
+            "url": "",
+            "explanation": "Les entités deviennent des tables qui peuvent contenir les clés primaires des autres tables auxquelles elles sont liées."
+          },
+          {
+            "name": "Liaison",
+            "url": "",
+            "explanation": "Les liaisons permettent de représenter visuellement les tables qui ont des liens entre elles."
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mld.png",
+          "details": "Exemple de MLD : Les maîtres n'ont qu'un seul chat et inversement, un chat peut trouver plusieurs souris, et les souris peuvent partager tous les bouts de fromages qu'elles trouvent."
+        }
+      },
+      {
+        "id": "mlt",
+        "title": "Modèle logique de traitement",
+        "description": "Le modèle logique de traitement suit le modèle organisationnel de traitement. Celui-ci comprend les opérations effectuées par des poste de travail. A chaque opération organisées sont associés un ou plusieurs outils informatiques.",
+        "elements": [
+          {
+            "name": "Etat",
+            "url": "public/img/merise/element/mlt/etat.png",
+            "explanation": "L'état définit l'état du sytème informatique à un instant T. Les états peuvent comporter des conditions qui permettent de passer aux états suivants."
+          },
+          {
+            "name": "Direction",
+            "url": "public/img/merise/element/mlt/direction.png",
+            "explanation": "Indicateur permettant d'illustrer le passage à l'état suivant"
+          },
+          {
+            "name": "Processus",
+            "url": "public/img/merise/element/mlt/processus.png",
+            "explanation": "Marque le début ou la fin d'un processus de traitement"
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mlt.png",
+          "details": "Exemple illustrant le passage d'un état à un autre d'un système, avec des conditions."
+        }
+      },
+      {
+        "id": "mlc",
+        "title": "Modèle logique de communication",
+        "description": "Le modèle logique de communication se présente sous la même forme que le modèle organisationnel de présentation, à la différence qu'il ne représente plus les sites, mais les bases de données qui communiquent entre elles.",
+        "elements": [
+          {
+            "name": "Base de donnée",
+            "url": "public/img/merise/element/mlc/bdd.png",
+            "explanation": "Représente une base de donnée particulière"
+          },
+          {
+            "name": "Echange",
+            "url": "public/img/merise/element/mlc/echange.png",
+            "explanation": "Représente les échanges entre les bases de données."
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mlc.png",
+          "details": "Cet exemple illustre les échanges entre les bases de données de différents sites."
+        }
+      }
+    ]
+  },
+  {
+    "level": "Niveau physique",
+    "models": [
+      {
+        "id": "mpd",
+        "title": "Modèle physique de données",
+        "description": "Le modèle phyisque de données est un modèle de la base de données. A partir du modèle logique de données, les tables sont construites tel qu'elles seront définies en base de données. La différence avec le MLD est le typage qui est ajouté à chaque colonne afin de le faire correspondre à la nomenclature spécifique de la base de donnée selectionnée.",
+        "elements": [
+          {
+            "name": "Table",
+            "url": "",
+            "explanation": "Les types sont indiqués à côté des informations qui deviendront des colonnes en base de données."
+          },
+          {
+            "name": "Liaison",
+            "url": "",
+            "explanation": "Les liaisons permettent de représenter visuellement les tables qui ont des liens entre elles."
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mpd.png",
+          "details": "Exemple de MPD : Ici les types qui seront utilisés pour l'enregistrement en base de données sont indiqués."
+        }
+      },
+      {
+        "id": "mpt",
+        "title": "Modèle physique de traitement",
+        "description": "Le modèle phyisque de traitement consiste en l'écriture du code. C'est la finalité de la méthode Merise dans la conception d'application : la production de code à partir de la conception.",
+        "elements": [
+        ],
+        "example": {
+          "url": "",
+          "details": ""
+        }
+      },
+      {
+        "id": "mpc",
+        "title": "Modèle physique de communication",
+        "description": "Dans le contexte du développement d'application, le modèle physique de communication serait les échanges effectifs entre les différents matériels. Il n'existe pas de modèle propre à Merise.",
+        "elements": [
+        ],
+        "example": {
+          "url": "",
+          "details": ""
+        }
+      }
+    ]
+  }
+]

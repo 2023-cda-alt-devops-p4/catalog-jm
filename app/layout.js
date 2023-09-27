@@ -13,7 +13,6 @@ const metrophobic = Metrophobic({
 export default function RootLayout({ children }) {
 
   const [darkTheme, setDarkTheme] = useState('dark')
-  console.log(darkTheme);
   return (
     <html lang="fr">
       <body className={metrophobic.className} data-theme-ui={darkTheme}>

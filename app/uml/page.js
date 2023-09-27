@@ -1,35 +1,31 @@
 import React from 'react'
 import styles from '../page.module.scss'
-import { Nobile } from 'next/font/google'
-
-const nobile = Nobile({
-  subsets: ['latin'],
-  weight: '400',
-})
+import uml from '../ressources/uml.json'
+import UmlComponent from '../components/UmlComponent'
+import Link from 'next/link'
 
 const Uml = () => {
+  const umlData = uml.map((item, index) => <UmlComponent item={item} key={index} />)
   return (
     <main className={styles.main}>
-      <h2>
-        UML
-      </h2>
+      <nav>
+        <ul>
+          {
+            uml.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link href={`#${item.id}`}>{item.title}</Link>
+                </li>
+              )
+            })
+          }
+        </ul>
+      </nav>
       <section>
-        <h3>Diagramme de classes</h3>
-        <h4 className={[nobile.className].join(' ')}>Description</h4>
-        <h4 className={[nobile.className].join(' ')}>Les élements</h4>
-        <h4 className={[nobile.className].join(' ')}>Exemple</h4>
-      </section>
-      <section>
-        <h3>Diagramme de séquence</h3>
-        <h4 className={[nobile.className].join(' ')}>Description</h4>
-        <h4 className={[nobile.className].join(' ')}>Les élements</h4>
-        <h4 className={[nobile.className].join(' ')}>Exemple</h4>
-      </section>
-      <section>
-        <h3>Diagramme de cas d'utilisation</h3>
-        <h4 className={[nobile.className].join(' ')}>Description</h4>
-        <h4 className={[nobile.className].join(' ')}>Les élements</h4>
-        <h4 className={[nobile.className].join(' ')}>Exemple</h4>
+        <h2>
+          UML
+        </h2>
+        {umlData}
       </section>
     </main>
   )
