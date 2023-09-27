@@ -1,7 +1,7 @@
 [
   {
     "type": "Diagrammes de structure",
-    "diagrams": [
+    "display": [
       {
         "id": "class",
         "title": "Diagramme de classe",
@@ -233,7 +233,7 @@
   },
   {
     "type": "Diagrammes de comportement",
-    "diagrams": [
+    "display": [
       {
         "id": "usecase",
         "title": "Diagramme de cas d'utilisation",
@@ -337,8 +337,8 @@
             "explanation":"L'état initial indique le point de départ de l'activité"
           },
           {
-            "name": "/img/uml/element/statetransition/end.png",
-            "url": "uneimage.jpg",
+            "name": "Etat final",
+            "url": "/img/uml/element/statetransition/end.png",
             "explanation":"L'état final indique le point de fin de l'activité"
           },
           {
