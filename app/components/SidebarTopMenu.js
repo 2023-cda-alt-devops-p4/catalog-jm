@@ -7,7 +7,7 @@ const SidebarTopMenu = ({ item }) => {
   const router = usePathname()
   const listMenu = item.map(value => {
     return (
-      <li>
+      <li key={value.id}>
         <Link href={`${router}#${value.id}`} key={value.id}>{value.title}</Link>
       </li>
     )
