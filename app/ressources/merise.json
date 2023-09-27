@@ -3,17 +3,28 @@
     "level":"Niveau conceptuel",
     "models": [
       {
-      "id":"mct",
+      "id":"mcc",
+      "title": "Modèle conceptuel de communication",
+      "description":"Approche du général au particulier, la méthode s’attache à identifier les échanges entre les systèmes. Le modèle de communication représente tous les flux et toute l’activité de l’entreprise. L’entreprise est considérée comme un système, et l’extérieur comme un ensemble de systèmes. L’entreprise est découpée en systèmes fonctionnels ou conceptuels.",
       "elements": [
         {
-          "name":"",
-          "url":"",
-          "explanation":""
+          "name":"Système",
+          "url":"public/img/merise/element/mcc/systeme.png",
+          "explanation":"Le système représente l'organisme dans lequel nous nous positionnons pour la réalisation du modèle"
+        },
+        {
+          "name":"Intervenant",
+          "url":"public/img/merise/element/mcc/intervenant.png",
+          "explanation":"Les intervenants sont les systèmes fonctionnels du modèle. Ils peuvent être des partenaires (externes au système de l'entreprise) des domaines (internes) ou encore des sous-modèles (inclus dans un domaine interne)"
+        },{
+          "name":"Message",
+          "url":"public/img/merise/element/mcc/message.png",
+          "explanation":"Les messages sont des flux contenants des informations. Il peut y avoir des messages enclencheur, qui attendent une réaction du receveur, ou des messages informations, qui renseignent sur une situation données"
         }
       ],
       "example": {
-        "url":"",
-        "details":""
+        "url":"public/img/merise/example/mcc.png",
+        "details":"Ce MCC montre les différents intervenants et les messages passés dans une entreprise qui livre des articles"
       }
     },
     {
