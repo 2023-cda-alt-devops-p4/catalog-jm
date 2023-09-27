@@ -317,5 +317,53 @@
         }
       }
     ]
+  },
+  {
+    "level": "Niveau physique",
+    "models": [
+      {
+        "id": "mpd",
+        "title": "Modèle physique de données",
+        "description": "Le modèle phyisque de données est un modèle de la base de données. A partir du modèle logique de données, les tables sont construites tel qu'elles seront définies en base de données. La différence avec le MLD est le typage qui est ajouté à chaque colonne afin de le faire correspondre à la nomenclature spécifique de la base de donnée selectionnée.",
+        "elements": [
+          {
+            "name": "Table",
+            "url": "",
+            "explanation": "Les types sont indiqués à côté des informations qui deviendront des colonnes en base de données."
+          },
+          {
+            "name": "Liaison",
+            "url": "",
+            "explanation": "Les liaisons permettent de représenter visuellement les tables qui ont des liens entre elles."
+          }
+        ],
+        "example": {
+          "url": "public/img/merise/example/mpd.png",
+          "details": "Exemple de MPD : Ici les types qui seront utilisés pour l'enregistrement en base de données sont indiqués."
+        }
+      },
+      {
+        "id": "mpt",
+        "title": "Modèle physique de traitement",
+        "description": "Le modèle phyisque de traitement consiste en l'écriture du code. C'est la finalité de la méthode Merise dans la conception d'application : la production de code à partir de la conception.",
+        "elements": [
+        ],
+        "example": {
+          "url": "",
+          "details": ""
+        }
+      },
+      {
+        "id": "mpc",
+        "title": "Modèle physique de communication",
+        "description": "Dans le contexte du développement d'application, le modèle physique de communication serait les échanges effectifs entre les différents matériels. Il n'existe pas de modèle propre à Merise.",
+        "elements": [
+        ],
+        "example": {
+          "url": "",
+          "details": ""
+        }
+      }
+    ]
   }
 ]
