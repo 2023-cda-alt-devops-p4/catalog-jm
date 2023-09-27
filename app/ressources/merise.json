@@ -149,6 +149,17 @@
         "url":"public/img/merise/example/mot.png",
         "details":"Ce modèle organisationnel de traitement montre le processus de décision de réparation d'un matériel et le passage de la décision au niveau hiérachique supérieur en fonction du montant de l'opération."
       }
+    },
+    {
+      "id":"mod",
+      "title": "Modèle organisationnel de données",
+      "description":"Le modèle organisationnel de données est similaire au modèle conceptuel de données à la différence qu'il exprime uniquement les données concernées par un psote de précis de l'organigramme de l'entreprise. Il se construit exactement comme le MCD. Veuillez vous référer à ce dernier pour sa conception",
+      "elements": [
+      ],
+      "example": {
+        "url":"public/img/merise/example/mod.png",
+        "details":"Ici deux modèles pour la même entreprise mais pour des postes différents. Certaines entités sont uniques à chacun, tandis que d'autres sont partagées."
+      }
     }
   ]
   }
