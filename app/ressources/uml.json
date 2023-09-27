@@ -1,6 +1,6 @@
 [
   {
-    "type": "structure",
+    "type": "Diagrammes de structure",
     "diagrams": [
       {
         "id": "class",
@@ -232,7 +232,7 @@
     ]
   },
   {
-    "type": "comportement",
+    "type": "Diagrammes de comportement",
     "diagrams": [
       {
         "id": "usecase",

@@ -1,0 +1,49 @@
+[
+  {
+    "level":"Niveau conceptuel",
+    "models": [
+      {
+      "id":"mct",
+      "elements": [
+        {
+          "name":"",
+          "url":"",
+          "explanation":""
+        }
+      ],
+      "example": {
+        "url":"",
+        "details":""
+      }
+    },
+    {
+      "id":"mct",
+      "elements": [
+        {
+          "name":"",
+          "url":"",
+          "explanation":""
+        }
+      ],
+      "example": {
+        "url":"",
+        "details":""
+      }
+    },
+    {
+      "id":"mct",
+      "elements": [
+        {
+          "name":"",
+          "url":"",
+          "explanation":""
+        }
+      ],
+      "example": {
+        "url":"",
+        "details":""
+      }
+    }
+  ]
+  }
+]
