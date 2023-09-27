@@ -115,5 +115,41 @@
       }
     }
   ]
+  },
+  {
+    "level":"Niveau organisationnel",
+    "models": [
+      {
+      "id":"mot",
+      "title": "Modèle organisationnel de traitement",
+      "description":"Le modèle organisationnel de traitement permet d'exprimer comment chaque poste de travail traite un message entrant dans l'organisation. On parle de procédure pour exprimer l'acheminement des actions et réactions entre les différents poste de travail.",
+      "elements": [
+        {
+          "name":"Poste de travail",
+          "url":"public/img/merise/element/mot/poste.png",
+          "explanation":"Les postes de travail sont définis dans un tableau avec des colonnes qui respectent l'organigramme de l'entreprise."
+        },
+        {
+          "name":"Message",
+          "url":"public/img/merise/element/mot/message.png",
+          "explanation":"Les messages font le lien entre les différentes opérations. Le message enclenchant la procédure est appelé un message événement mais n'est pas obligatoire."
+        },
+        {
+          "name":"Opération",
+          "url":"public/img/merise/element/mot/operation.png",
+          "explanation":"L'opération décrit l'opération effectuée lors de la reception du message. Ce dernier peut comporter des conditions qui permettront d'envoyer un message différent en fonction des besoins"
+        },
+        {
+          "name":"Temporisateur",
+          "url":"public/img/merise/element/mot/temporisateur.png",
+          "Explanation":"L'opérateur peut être enclenchée de manière périodique par un temporisateur."
+        }
+      ],
+      "example": {
+        "url":"public/img/merise/example/mot.png",
+        "details":"Ce modèle organisationnel de traitement montre le processus de décision de réparation d'un matériel et le passage de la décision au niveau hiérachique supérieur en fonction du montant de l'opération."
+      }
+    }
+  ]
   }
 ]
