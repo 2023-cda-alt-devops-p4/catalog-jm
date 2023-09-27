@@ -60,18 +60,58 @@
     },
     {
       "id":"mcd",
-      "title": "Modèle conceptuel de communication",
-      "description":"",
+      "title": "Modèle conceptuel de données",
+      "description":"Le modèle conceptuel de données permet d'avoir un premier aperçu de la manière dont les données seront organisées. On y définit les entités ainsi que les relations qu'elles ont entre elles.'",
       "elements": [
         {
-          "name":"",
-          "url":"",
-          "explanation":""
+          "name":"Entité",
+          "url":"public/img/merise/element/mcd/entite.png",
+          "explanation":"Une entité est un ensemble d'information qui a une existence propre. Elle contient les informations qui seront enregistrées."
+        },
+        {
+          "name":"Relation",
+          "url":"public/img/merise/element/mcd/relation.png",
+          "explanation":"Les relations permettent de faire le lien entre deux ou plusieurs entités. Elle contient un verbe qui précise la relation qu'elles ont entre elles. Elle peut être porteuse d'information. Les liens entre les relations et les entités sont appelées des pattes."
+        },
+        {
+          "name":"Nomenclature",
+          "url":"public/img/merise/element/mcd/nomenclature.png",
+          "explanation":"Les nomenclatures sont un type de relation qui lie une entité avec elle-même."
+        },
+        {
+          "name":"Cardinalité",
+          "url":"public/img/merise/element/mcd/cardinalité.png",
+          "explanation":"Les cardinalités sont des contraintes qui précisent le nombre d'occurrence de relation possède une entité via une relation. Elle peuvent égale à 0, à 1 ou à N (nombre indéfini)"
+        },
+        {
+          "name":"OU inclusif",
+          "url":"public/img/merise/element/mcd/ou_inclusif.png",
+          "explanation":"Contrainte qui lie des relations qui permettent d'exprimer le fait qu'une entité peut être lié avec une ou toutes les entités auxquelles elle est rattaché concernées par la contrainte."
+        },
+        {
+          "name":"Exclusion",
+          "url":"public/img/merise/element/mcd/exclusion.png",
+          "explanation":"Contrainte qui lie des relations et qui exprime le fait que toutes les occurrences d'une entité auront la même relation avec une seule des entités concernées exclusivement."
+        },
+        {
+          "name":"Partition",
+          "url":"public/img/merise/element/mcd/partition.png",
+          "explanation":"Contrainte qui lie des relations et exprime le fait les occurrences d'une entité peut avoir une relation au choix avec une des entités qui sont concernées."
+        },
+        {
+          "name":"Inclusion",
+          "url":"public/img/merise/element/mcd/inclusion.png",
+          "explanation":"Contrainte qui lie des relations et qui exprime le fait qu'une entité à necessaire une relation avec toutes les entités concernées par la contrainte."
+        },
+        {
+          "name":"Ternaire",
+          "url":"public/img/merise/element/mcd/ternaire.png",
+          "explanation":"Relation qui lie trois entités. Une des pattes peut avoir une flèche qui permet d'exprimer l'unicité de l'entité indiquée par rapport au couple de la relation."
         }
       ],
       "example": {
-        "url":"",
-        "details":""
+        "url":"public/img/merise/example/mcd.png",
+        "details":"Ce modèle conceptuelle de donnée montre les entités et les relations lors d'un processus de facturation après une commande par un client."
       }
     }
   ]
