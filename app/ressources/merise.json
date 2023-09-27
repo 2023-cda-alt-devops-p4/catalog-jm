@@ -285,19 +285,29 @@
       }
     },
     {
-      "id":"mld",
-      "title": "Modèle logique de données",
-      "description":"",
+      "id":"mlt",
+      "title": "Modèle logique de traitement",
+      "description":"Le modèle logique de traitement suit le modèle organisationnel de traitement. Celui-ci comprend les opérations effectuées par des poste de travail. A chaque opération organisées sont associés un ou plusieurs outils informatiques.",
       "elements": [
         {
-          "name":"",
-          "url":"",
-          "explanation":""
+          "name":"Etat",
+          "url":"public/img/merise/element/mlt/etat.png",
+          "explanation":"L'état définit l'état du sytème informatique à un instant T. Les états peuvent comporter des conditions qui permettent de passer aux états suivants."
+        },
+        {
+          "name":"Direction",
+          "url":"public/img/merise/element/mlt/direction.png",
+          "explanation":"Indicateur permettant d'illustrer le passage à l'état suivant"
+        },
+        {
+          "name":"Processus",
+          "url":"public/img/merise/element/mlt/processus.png",
+          "explanation":"Marque le début ou la fin d'un processus de traitement"
         }
       ],
       "example": {
-        "url":"",
-        "details":""
+        "url":"public/img/merise/example/mlt.png",
+        "details":"Exemple illustrant le passage d'un état à un autre d'un système, avec des conditions."
       }
     }
   ]
