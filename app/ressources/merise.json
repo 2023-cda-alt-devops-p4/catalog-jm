@@ -66,7 +66,7 @@
         {
           "name":"Entité",
           "url":"public/img/merise/element/mcd/entite.png",
-          "explanation":"Une entité est un ensemble d'information qui a une existence propre. Elle contient les informations qui seront enregistrées."
+          "explanation":"Une entité est un ensemble d'information qui a une existence propre. Elle contient les informations qui seront enregistrées. Une information doit être défini comme clé unique à l'entité."
         },
         {
           "name":"Relation",
@@ -158,7 +158,7 @@
         {
           "name":"Entité",
           "url":"public/img/merise/element/mcd/entite.png",
-          "explanation":"Une entité est un ensemble d'information qui a une existence propre. Elle contient les informations qui seront enregistrées."
+          "explanation":"Une entité est un ensemble d'information qui a une existence propre. Elle contient les informations qui seront enregistrées. Une information doit être défini comme clé unique à l'entité."
         },
         {
           "name":"Relation",
@@ -225,6 +225,79 @@
       "example": {
         "url":"public/img/merise/example/moc.png",
         "details":"Ici la représentation de différents site d'une entreprise qui échange leurs informations concernant les process de réparation."
+      }
+    }
+  ]
+  },
+  {
+    "level":"Niveau logique",
+    "models": [
+      {
+        "id":"mld",
+        "title": "Modèle logique de données",
+        "description":"Le modèle logique de données est un passage depuis le modèle le modèle conceptuel (ou organisationnel) de données vers un modèle qui définie la structure qui prendra la base de données dans un système de gestion de base de données relationnelle. Des règles définissent la manière dont la conversion doit se faire.",
+        "elements": [
+          {
+            "name":"Relation de type 1 - 1",
+            "url":"",
+            "explanation":"Lors de la conversion vers le MLD, les deux entités échangent leur clé primaire."
+          },
+          {
+            "name":"Relation de type 1 - N",
+            "url":"",
+            "explanation":"Lors de la conversion vers le MLD, la clé primaire de l'entité 1 est injectée dans l'entité N"
+          },
+          {
+            "name":"Relation de type N - N",
+            "url":"",
+            "explanation":"Lors de la conversion vers le MLD, une table intermédiaire est créée contenant une clé primaire propre à la table ainsi que les clés primaire de chacune des autres tables."
+          },
+          {
+            "name":"Table",
+            "url":"",
+            "explanation":"Les entités deviennent des tables qui peuvent contenir les clés primaires des autres tables auxquelles elles sont liées."
+          },
+          {
+            "name":"Liaison",
+            "url":"",
+            "explanation":"Les liaisons permettent de représenter visuellement les tables qui ont des liens entre elles."
+          }
+        ],
+        "example": {
+          "url":"public/img/merise/example/mld.png",
+          "details":"Exemple de MLD : Les maîtres n'ont qu'un seul chat et inversement, un chat peut trouver plusieurs souris, et les souris peuvent partager tous les bouts de fromages qu'elles trouvent."
+        }
+      },
+      {
+      "id":"mld",
+      "title": "Modèle logique de données",
+      "description":"",
+      "elements": [
+        {
+          "name":"",
+          "url":"",
+          "explanation":""
+        }
+      ],
+      "example": {
+        "url":"",
+        "details":""
+      }
+    },
+    {
+      "id":"mld",
+      "title": "Modèle logique de données",
+      "description":"",
+      "elements": [
+        {
+          "name":"",
+          "url":"",
+          "explanation":""
+        }
+      ],
+      "example": {
+        "url":"",
+        "details":""
       }
     }
   ]
