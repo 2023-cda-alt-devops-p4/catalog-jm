@@ -1,7 +1,7 @@
 [
   {
     "type": "Diagrammes de structure",
-    "diagrams": [
+    "display": [
       {
         "id": "class",
         "title": "Diagramme de classe",
@@ -233,7 +233,7 @@
   },
   {
     "type": "Diagrammes de comportement",
-    "diagrams": [
+    "display": [
       {
         "id": "usecase",
         "title": "Diagramme de cas d'utilisation",
