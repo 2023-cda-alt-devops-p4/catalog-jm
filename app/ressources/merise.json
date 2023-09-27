@@ -29,20 +29,39 @@
     },
     {
       "id":"mct",
+      "title": "Modèle conceptuel de traitement",
+      "description":"Le modèle conceptuel de traitnement est un zoom sur un intervenant du MCC. Il détaille commen il traite l'information qu'il reçoit",
       "elements": [
         {
-          "name":"",
-          "url":"",
-          "explanation":""
+          "name":"Message",
+          "url":"public/img/merise/element/mct/message.png",
+          "explanation":"Le message peut être un événement (reçu) ou un résultat (envoyé)"
+        },
+        {
+          "name":"Intervenant",
+          "url":"public/img/merise/element/mct/intervenant.png",
+          "explanation":"Représentation du domaine ou du sous-domaine que le souhaite détailler"
+        },
+        {
+          "name":"Opération",
+          "url":"public/img/merise/element/mct/operation.png",
+          "explanation":"L'opération décrit l'opération effectuée lors de la reception du message. Ce dernier peut comporter des conditions qui permettront d'envoyer un message différent en fonction des besoins"
+        },
+        {
+          "name":"Synchronisation",
+          "url":"public/img/merise/element/mct/synchronisation.png",
+          "explanation":"Plusieurs messages peuvent arriver dans une opération. La synchronisation permet de définir les conditions dans lesquels ces messages seront traités grâce à des opérateur logique ET/OU"
         }
       ],
       "example": {
-        "url":"",
-        "details":""
+        "url":"public/img/merise/example/mct.png",
+        "details":"Dans cet exemple concernant la prise de décision d'aller ou non au cinéma, l'opération reçoit plusieurs messages, la synchronisation nous informe sur les messages qui permettent d'accéder à l'opération."
       }
     },
     {
-      "id":"mct",
+      "id":"mcd",
+      "title": "Modèle conceptuel de communication",
+      "description":"",
       "elements": [
         {
           "name":"",
