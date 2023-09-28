@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from './page.module.scss'
 import Link from 'next/link'
 import { Nobile } from 'next/font/google'
