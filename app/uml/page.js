@@ -23,7 +23,7 @@ const Uml = () => {
           </h2>
           {displayDiagrams}
         </section>
-        {/* <ElementList /> */}
+        <ElementList />
 
       </main>
     </ClickContextProvider>

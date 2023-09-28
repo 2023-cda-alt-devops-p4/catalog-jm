@@ -21,8 +21,12 @@ const UmlComponent = ({ item }) => {
         <h3 className={styles.descriptionTitle}>{item.title}</h3>
         <p className={[nobile.className, styles.descriptionContent].join(' ')}>{item.description}</p>
       </div>
-
+      {
+        item.elements.length < 1 ?
+        null
+        :
         <div className={styles.legendButton} onClick={() => dispatch({ type: 'hydrate', payload: item.elements })}>Montrer la légende</div>
+      }
   
       {
         item.example.url !== '' ?
