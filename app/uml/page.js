@@ -3,7 +3,7 @@ import styles from '../page.module.scss'
 import uml from '../ressources/uml.json'
 import Sidebar from '../components/Sidebar'
 import UmlDisplay from '../components/UmlDisplay'
-
+import ElementList from '../components/ElementList'
 const Uml = () => {
   const displayDiagrams = uml.map((value, index) => {
     return (
@@ -19,6 +19,8 @@ const Uml = () => {
         </h2>
         {displayDiagrams}
       </section>
+      <ElementList />
+
     </main>
   )
 }

@@ -1,6 +1,8 @@
-import React from 'react'
-import { Nobile } from 'next/font/google'
+'use client'
+import React, { useContext } from 'react'
 import Image from 'next/image'
+import { elementContext } from '@/context/elementCtx'
+import { Nobile } from 'next/font/google'
 
 const nobile = Nobile({
   subsets: ['latin'],
@@ -8,21 +10,10 @@ const nobile = Nobile({
 })
 
 const UmlComponent = ({ item }) => {
-  const ratio = 16/9
-  const elementImage = item.elements.map((el, i) => {
-    return (
-      <div key={i}>
-        <p className={[nobile.className].join(' ')}>{el.name}</p>
-        <Image
-          src={el.url}
-          width={150}
-          height={200 / ratio}
-          alt={el.name}
-        />
-        <p>{el.explanation}</p>
-      </div>
-    )
-  })
+  const ratio = 16 / 9
+  // import context to change the content of the element div
+  const {state, dispatch} = useContext(elementContext)
+
   return (
     <section id={item.id}>
       <div>
@@ -30,17 +21,22 @@ const UmlComponent = ({ item }) => {
         <h4 className={[nobile.className].join(' ')}>{item.description}</h4>
       </div>
       <div>
-        {elementImage}
+        <div onClick={() => dispatch({type:'hydrate', payload: item.elements})}>Montrer la légende</div>
+
       </div>
-      <div>
-      <Image
-          src={item.example.url}
-          width={400}
-          height={400 / ratio}
-          alt={item.title}
-        />
-        <p className={[nobile.className].join(' ')}>{item.example.details}</p>
-      </div>
+      {
+        item.example.url !== '' ?
+          <div>
+            <Image
+              src={item.example.url}
+              width={400}
+              height={400 / ratio}
+              alt={item.title}
+            />
+            <p className={[nobile.className].join(' ')}>{item.example.details}</p>
+          </div>
+          : null
+      }
     </section>
   )
 }

@@ -3,6 +3,7 @@ import styles from '../page.module.scss'
 import merise from '../ressources/merise.json'
 import Sidebar from '../components/Sidebar'
 import UmlDisplay from '../components/UmlDisplay'
+import ElementList from '../components/ElementList'
 
 const Merise = () => {
   const displayModels = merise.map((value, index) => {
@@ -19,6 +20,7 @@ const Merise = () => {
         </h2>
         {displayModels}
       </section>
+      <ElementList />
     </main>
   )
 }
