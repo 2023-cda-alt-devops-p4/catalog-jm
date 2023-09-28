@@ -3,7 +3,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 90vw;
   margin: auto;
   .sidebarNav {
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
@@ -58,7 +58,7 @@
     transform: translateX(-100%);
   }
   .contentSection {
-    max-width: 90vw;
+    // max-width: 90vw;
     margin: auto;
     .sectionTitle {
       font-size: 3em;

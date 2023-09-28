@@ -17,20 +17,19 @@ const UmlComponent = ({ item }) => {
 
   return (
     <section id={item.id} className={styles.individualComponent}>
-      <div>
-        <h3>{item.title}</h3>
-        <h4 className={[nobile.className].join(' ')}>{item.description}</h4>
+      <div className={styles.descriptionSection}>
+        <h3 className={styles.descriptionTitle}>{item.title}</h3>
+        <p className={[nobile.className, styles.descriptionContent].join(' ')}>{item.description}</p>
       </div>
-      <div>
-        <div onClick={() => dispatch({ type: 'hydrate', payload: item.elements })}>Montrer la légende</div>
-      </div>
+
+        <div className={styles.legendButton} onClick={() => dispatch({ type: 'hydrate', payload: item.elements })}>Montrer la légende</div>
+  
       {
         item.example.url !== '' ?
           <>
-            <div className={styles.imgExample}>
-              <Image
+            <div className={styles.imgExampleContainer}>
+              <img
                 src={item.example.url}
-                fill
                 alt={item.title}
               />
             </div>

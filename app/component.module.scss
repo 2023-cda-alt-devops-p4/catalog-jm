@@ -1,24 +1,57 @@
+@use 'variables';
+
 .componentDisplay {
-  margin-top: 30px;
+  margin-top: 200px;
   margin-bottom: 20px;
 
   .componentTitle {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 2.7em;
   }
 
   .individualComponent {
     margin: auto;
+    margin-top: 100px;
     max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .descriptionSection {
+      margin-bottom: 30px;
+      .descriptionTitle {
+        font-size: 2.3em;
+        margin-bottom: 20px;
+      }
+      .descriptionContent {
+        font-size: 1.5em;
+      }
+    }
 
-    .imgExample {
+    .legendButton {
+      padding: 10px;
+      margin-bottom: 15px;
+      width: 200px;
+      border-radius: 30px;
+      filter: drop-shadow(1px 1px 3px rgba($color: #000000, $alpha: 0.5));
+      background: linear-gradient(30deg, variables.$accent-color-primary, variables.$accent-color-secondary);
+      text-decoration: none;
+      color: variables.$content-color-dark;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        background: linear-gradient(30deg, variables.$accent-color-secondary, variables.$accent-color-primary);
+
+      }
+      
+    }
+    .imgExampleContainer {
       margin: auto;
-      position: relative;
-      width: 80%;
-      height: 200px;
+      width: 100%;
 
       img {
+        max-width: 100%;
         object-fit: contain;
       }
     }

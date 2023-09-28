@@ -18,7 +18,7 @@ const Merise = () => {
       <Sidebar item={merise} />
       <section className={styles.contentSection}>
         <h2 className={styles.sectionTitle}>
-          UML
+          MERISE
         </h2>
         {displayModels}
       </section>
