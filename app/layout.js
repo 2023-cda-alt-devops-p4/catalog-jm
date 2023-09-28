@@ -12,7 +12,7 @@ const metrophobic = Metrophobic({
 
 export default function RootLayout({ children }) {
 
-  const [darkTheme, setDarkTheme] = useState('light')
+  const [darkTheme, setDarkTheme] = useState('')
 
   return (
     <html lang="fr">
