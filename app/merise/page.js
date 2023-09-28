@@ -1,10 +1,11 @@
+'use client'
 import React from 'react'
-import styles from '../page.module.scss'
+import styles from '../diagram.module.scss'
 import merise from '../ressources/merise.json'
 import Sidebar from '../components/Sidebar'
 import UmlDisplay from '../components/UmlDisplay'
 import ElementList from '../components/ElementList'
-
+import { ClickContextProvider } from '@/context/clickCtx'
 const Merise = () => {
   const displayModels = merise.map((value, index) => {
     return (
@@ -12,6 +13,7 @@ const Merise = () => {
     )
   })
   return (
+    <ClickContextProvider>
     <main className={styles.main}>
       <Sidebar item={merise} />
       <section>
@@ -22,6 +24,7 @@ const Merise = () => {
       </section>
       <ElementList />
     </main>
+    </ClickContextProvider>
   )
 }
 
