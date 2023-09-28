@@ -1,7 +1,6 @@
 import { createContext, useMemo, useReducer } from "react"
 
-const initialState = [{
-}]
+const initialState = []
 
 function reducer(state, action) {
   switch (action.type) {

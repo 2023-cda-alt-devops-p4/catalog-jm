@@ -1,24 +1,23 @@
 import React from 'react'
 import { Nobile } from 'next/font/google'
-import Image from 'next/image'
+import styles from '../element.module.scss'
 const nobile = Nobile({
   subsets: ['latin'],
   weight: '400',
 })
 
-const ElementImage = ({item}) => {
-  const ratio = 16 / 9
+const ElementImage = ({ item, explanation }) => {
 
   return (
-    <div>
+    <div className={styles.individualElement}>
+      <div className={styles.imgElementContainer} onClick={() => { explanation(item.explanation) }}>
+        <img
+          className={styles.imageElement}
+          src={item.url}
+          alt={item.name}
+        />
+      </div>
       <p className={[nobile.className].join(' ')}>{item.name}</p>
-      <Image
-        src={item.url}
-        width={150}
-        height={200 / ratio}
-        alt={item.name}
-      />
-      <p>{item.explanation}</p>
     </div>
   )
 }
