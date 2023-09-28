@@ -17,13 +17,13 @@ const Uml = () => {
 
       <main className={styles.main}>
         <Sidebar item={uml} />
-        <section>
-          <h2>
+        <section className={styles.contentSection}>
+          <h2 className={styles.sectionTitle}>
             UML
           </h2>
           {displayDiagrams}
         </section>
-        <ElementList />
+        {/* <ElementList /> */}
 
       </main>
     </ClickContextProvider>

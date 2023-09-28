@@ -16,8 +16,8 @@ const Merise = () => {
     <ClickContextProvider>
     <main className={styles.main}>
       <Sidebar item={merise} />
-      <section>
-        <h2>
+      <section className={styles.contentSection}>
+        <h2 className={styles.sectionTitle}>
           UML
         </h2>
         {displayModels}

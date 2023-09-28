@@ -3,7 +3,8 @@
 .main {
   display: flex;
   flex-direction: column;
-
+  max-width: 80%;
+  margin: auto;
   .sidebarNav {
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
     position: fixed;
@@ -56,6 +57,14 @@
   .menuHidden {
     transform: translateX(-100%);
   }
+  .contentSection {
+    max-width: 90vw;
+    margin: auto;
+    .sectionTitle {
+      font-size: 3em;
+      margin: 15px;
+    }
+  }
 }
 
 [data-theme-ui='dark'] {
@@ -98,27 +107,31 @@
       transition: transform 0.2s;
       z-index: 20;
 
-      .sidebarSection {
-        text-align: left;
-        margin: 10px;
+      .allSections {
+        position: sticky;
+        top: 100px;
+        .sidebarSection {
+          text-align: left;
+          margin: 10px;
 
-        .sectionTitle {
-          font-size: 1.5em;
-          text-decoration: underline;
-        }
+          .sectionTitle {
+            font-size: 1.5em;
+            text-decoration: underline;
+          }
 
-        .modelList {
-          margin-left: 20px;
-          margin-top: 20px;
+          .modelList {
+            margin-left: 20px;
+            margin-top: 20px;
 
-          .modelLink {
-            .modelListElement {
-              padding: 5px;
-            }
+            .modelLink {
+              .modelListElement {
+                padding: 5px;
+              }
 
-            .isSelected {
-              border-left: 2px solid variables.$title-color;
-              font-weight: bold;
+              .isSelected {
+                border-left: 2px solid variables.$title-color;
+                font-weight: bold;
+              }
             }
           }
         }
