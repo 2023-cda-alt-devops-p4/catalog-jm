@@ -8,9 +8,9 @@ const nobile = Nobile({
   subsets: ['latin'],
   weight: '400',
 })
-const Navbar = ({ darkTheme, setDarkTheme }) => {
+const Navbar = ({ setDarkTheme }) => {
   const [stylesNav, setStylesNav] = useState([])
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(true)
 
   useEffect(() => {
     if (toggle) {
@@ -23,14 +23,16 @@ const Navbar = ({ darkTheme, setDarkTheme }) => {
   return (
     <nav className={styles.navbar}>
       <h1 className={[nobile.className, styles.mainTitle].join(' ')}>UML et Merise</h1>
-      <div  className={stylesNav.join(' ')}>
-      <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}></div>
+      <div className={stylesNav.join(' ')}>
+        <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}></div>
         <ul className={styles.linkList}>
-          <li className={styles.listElement}><Link href="/" className={styles.navLink}>Accueil</Link></li>
-          <li className={styles.listElement}><Link href="/uml" className={styles.navLink}>UML</Link></li>
-          <li className={styles.listElement}><Link href="/merise" className={styles.navLink}>Merise</Link></li>
-          <li className={[styles.themeToggle].join(' ')}>
-            <p  className={styles.toggleText} onClick={setDarkTheme}>{darkTheme}</p>
+          <Link href="/" className={styles.navLink}><li className={styles.listElement}>Accueil</li></Link>
+          <Link href="/uml" className={styles.navLink}><li className={styles.listElement}>UML</li></Link>
+          <Link href="/merise" className={styles.navLink}><li className={styles.listElement}>Merise</li></Link>
+          <li>
+            <div className={styles.toggleSlide} onClick={setDarkTheme}>
+              <div className={[styles.themeToggle].join(' ')}></div>
+            </div>
           </li>
         </ul>
       </div>

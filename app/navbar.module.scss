@@ -5,15 +5,16 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+
   .mainTitle {
     margin-top: 10px;
     font-size: 2.5em;
   }
 
   .linkContainer {
-    position: absolute;
+    position: fixed;
     left: 0;
-    top:50px;
+    top: 50px;
     width: 80vw;
     padding: 20px;
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
@@ -24,74 +25,89 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    .linkList{
+
+    .linkList {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .listElement {
-      padding: 10px;
-      margin: 5px;
-      width : 200px;
-      border-radius: 30px;
-      filter: drop-shadow(1px 1px 3px rgba($color: #000000, $alpha: 0.5));
-      background: linear-gradient(30deg, variables.$accent-color-primary, variables.$accent-color-secondary);
-      &:hover {
-      background: linear-gradient(30deg, variables.$accent-color-secondary, variables.$accent-color-primary);
 
-      }
       .navLink {
-        text-decoration: none;
-        color: variables.$content-color-dark;
-        font-weight: bold;
-      }
-    }}
-    .themeToggle {
-      background-color: variables.$background-color-dark;
-      padding: 10px;
-      margin: auto;
-      width : 150px;
-      border-radius: 30px;
-      .toggleText {
-        color: variables.$content-color-dark;
-        text-transform: uppercase;
+        padding: 10px;
+        margin: 5px;
+        width: 200px;
+        border-radius: 30px;
+        filter: drop-shadow(1px 1px 3px rgba($color: #000000, $alpha: 0.5));
+        background: linear-gradient(30deg, variables.$accent-color-primary, variables.$accent-color-secondary);
+
+        &:hover {
+          background: linear-gradient(30deg, variables.$accent-color-secondary, variables.$accent-color-primary);
+
+        }
+
+        .listElement {
+          text-decoration: none;
+          color: variables.$content-color-dark;
+          font-weight: bold;
+        }
       }
     }
+    .toggleSlide {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      cursor: pointer;
+      .themeToggle {
+        position: absolute;
+        left: 0;
+        background-color: variables.$background-color-dark;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transition: left 0.2s;
+      }
+    }
+
     .toggleButton {
-      width : 30px;
+      width: 30px;
       height: 30px;
       position: absolute;
-      top:0;
+      top: 0;
       right: -30px;
       background-color: rgba($color: #000000, $alpha: 0.5);
       border-radius: 0 5px 5px 0;
     }
   }
+
   .isHidden {
     transform: translateX(-100%);
   }
 }
 
-[data-theme-ui='dark']{
+[data-theme-ui='dark'] {
   .navbar {
     .linkContainer {
       background-color: variables.$background-color-dark;
-      .listElement {
+
       .navLink {
-        color: variables.$content-color-dark;
+        .listElement {
+          color: variables.$content-color-dark;
+        }
       }
-    }
-    .themeToggle {
-      background-color: variables.$background-color;
-      .toggleText {
-        color: variables.$content-color;
+      .toggleSlide {
+        .themeToggle {
+          left: 20px;
+          background-color: variables.$background-color;
+        }
       }
-    }
-    .toggleButton {
-      background-color: rgba($color: #000000, $alpha: 0.5);
+
+      .toggleButton {
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
     }
   }
-}
 }
 
 @media screen and (min-width: 960px) {
@@ -100,10 +116,11 @@
     display: flex;
     flex-direction: column;
     padding: 0;
+
     .mainTitle {
       font-size: 3.2em;
     }
-    
+
     .linkContainer {
       position: unset;
       width: unset;
@@ -111,20 +128,24 @@
       border-bottom: unset;
       background-color: variables.$background-color;
       flex-direction: row;
-      .linkList{
+
+      .linkList {
         flex-direction: row;
-      .listElement {
-          .navLink {
+
+        .navLink {
+          .listElement {
             text-decoration: none;
             color: variables.$content-color-dark;
             font-weight: bold;
           }
         }
       }
+
       .toggleButton {
         display: none;
       }
     }
+
     .isHidden {
       transform: translateX(0);
     }
