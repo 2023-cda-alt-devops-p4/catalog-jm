@@ -1,0 +1,26 @@
+.componentDisplay {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  .componentTitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+
+  .individualComponent {
+    margin: auto;
+    max-width: 80%;
+
+    .imgExample {
+      margin: auto;
+      position: relative;
+      width: 80%;
+      height: 200px;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}
