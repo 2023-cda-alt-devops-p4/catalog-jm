@@ -5,7 +5,7 @@ import SidebarTopMenu from './SidebarTopMenu'
 
 const Sidebar = ({ item }) => {
   const [stylesNav, setStylesNav] = useState([])
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(true)
 
   useEffect(() => {
     if (toggle) {
@@ -27,7 +27,9 @@ const Sidebar = ({ item }) => {
   return (
     <nav className={stylesNav.join(' ')}>
       <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}></div>
+      <div className={styles.allSections}>
       {sideNavigation}
+      </div>
     </nav>
   )
 }

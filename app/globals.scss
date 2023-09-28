@@ -4,18 +4,15 @@
   padding: 0;
   margin: 0;
 }
+body {
+  min-height: 100vh;
+}
 
 :root {
 
   background-color: $background-color;
   text-align: center;
 
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-rows: 200px 1fr 150px;
-  }
 
   h1,
   h2,

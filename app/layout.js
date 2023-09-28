@@ -17,11 +17,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={metrophobic.className} data-theme-ui={darkTheme}>
+        <Navbar darkTheme={darkTheme} setDarkTheme={() => setDarkTheme(prev => prev === 'light' ? 'dark' : 'light')} />
         <ElementContextProvider>
-          <Navbar darkTheme={darkTheme} setDarkTheme={() => setDarkTheme(prev => prev === 'light' ? 'dark' : 'light')} />
           {children}
-          <Footer />
         </ElementContextProvider>
+        <Footer />
       </body>
     </html>
   )
