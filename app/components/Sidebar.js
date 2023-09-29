@@ -16,9 +16,9 @@ const Sidebar = ({ item }) => {
   }, [toggle])
 
 
-  const sideNavigation = item.map(value => {
+  const sideNavigation = item.map((value, index) => {
     return (
-      <div className={styles.sidebarSection}>
+      <div className={styles.sidebarSection} key={index}>
         <h3 className={styles.sectionTitle}>{value.type}</h3>
         <SidebarTopMenu item={value.display} />
       </div>
