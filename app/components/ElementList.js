@@ -18,7 +18,6 @@ const ElementList = () => {
     } else {
       setStylesExplanation([styles.elementDisplay])
     }
-    console.log(stylesExplanation);
   }, [state])
 
   const elementImage = state.map((el, i) => {

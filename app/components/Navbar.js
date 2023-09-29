@@ -28,9 +28,9 @@ const Navbar = () => {
       <div className={stylesNav.join(' ')}>
         <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}><p className={styles.toggleText}>Menu</p></div>
         <ul className={styles.linkList}>
-          <Link href="/" className={styles.navLink}><li className={styles.listElement}>Accueil</li></Link>
-          <Link href="/uml" className={styles.navLink}><li className={styles.listElement}>UML</li></Link>
-          <Link href="/merise" className={styles.navLink}><li className={styles.listElement}>Merise</li></Link>
+          <li className={styles.navLink}><Link href="/" className={styles.listElement}>Accueil</Link></li>
+          <li className={styles.navLink}><Link href="/uml" className={styles.listElement}>UML</Link></li>
+          <li className={styles.navLink}><Link href="/merise" className={styles.listElement}>Merise</Link></li>
           <li>
             <div className={styles.toggleSlide} onClick={() => { theme === 'light' ? setTheme('dark') : setTheme('light') }}>
               <div className={[styles.themeToggle].join(' ')}></div>
