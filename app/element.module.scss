@@ -45,16 +45,16 @@
   .elementContainer {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    min-width: 90%;
+    // justify-content: space-evenly;
+    width: 90%;
     overflow-x: auto;
-    gap: 10px;
+    padding: 0 10px 0 10px;
+    // gap: 10px;
 
     .individualElement {
-      margin-top: 10px;
       flex-shrink: 0;
       min-height: 100%;
-
+      margin:10px;
       .imgElementContainer {
         height: 150px;
         width: 150px;

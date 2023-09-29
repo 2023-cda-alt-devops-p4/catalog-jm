@@ -3,37 +3,97 @@
 
 .main {
   margin: auto;
-  max-width: 80%;
+  max-width:100%;
 
-}
+  .mainTitle {
 
-.focus {
-  @include mixins.cardDefault(variables.$accent-color-primary, 1px, darken(variables.$background-color, 5%), );
-  scale: 1;
-  transition: scale 0.2s;
-  margin: variables.$card-margin;
-  &:hover {
-    scale: 1.05;
+    font-size: 3em;
+    margin-bottom: 30px;
   }
-}
 
-.navCard {
-  @include mixins.cardDefault(variables.$background-color, 1px, darken(variables.$background-color, 5%), );
-  margin: variables.$card-margin;
-}
-
-[data-theme='dark'] {
   .focus {
-    @include mixins.cardDefault(variables.$accent-color-primary, 1px, darken(variables.$background-color-dark, 5%), );
-    scale: 1;
-    transition: scale 0.2s;
+    .focusTitle {
+      font-size: 2.5em;
+      margin: 30px;
+    }
 
-    &:hover {
-      scale: 1.05;
+    .focusDiv {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+      .focusSubdiv {
+        width: 600px;
+        max-width: 100%;
+
+        .focusSubtitle {
+          font-size: 2.1em;
+          margin: 20px 0 20px 0;
+        }
+
+        .majorElementDiv {
+          background-color: rgba($color: #000000, $alpha: 0.1);
+          border-radius: 20px;
+          padding: 20px;
+          margin: 10px;
+
+          .majorElementTitle {
+            font-size: 1.9em;
+            margin: 0 0 20px 0;
+          }
+
+          .majorElementDescription {
+            text-align: justify;
+            margin: auto;
+            height: 20px;
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
     }
   }
 
-  .navCard {
-    @include mixins.cardDefault(variables.$background-color, 1px, darken(variables.$background-color-dark, 5%), );
+
+}
+
+// [data-theme='dark'] {
+// }
+
+@media screen and (min-width: 960px) {
+  .main {
+    margin: auto;
+    max-width:100%;
+  
+    .mainTitle {
+  
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+  
+    .focus {
+      .focusTitle {
+        font-size: 2.5em;
+        margin: 30px;
+      }
+  
+      .focusDiv {
+        flex-direction: row;
+  
+        .focusSubdiv {
+          max-width: 500px;
+  
+
+          
+        }
+      }
+    }
+  
+  
   }
 }

@@ -18,7 +18,7 @@ export default function Home() {
   const [majorMerise, setMajorMerise] = useState([])
 
   // function to loop through
-  const loopJSON = (setVariable, json, type) => {
+  const loopJSON = (setVariable, json) => {
     let filter = []
     let result = []
     json.forEach(element => {
@@ -33,19 +33,17 @@ export default function Home() {
   }
 
   useEffect(() => {
-    loopJSON(setMajorMerise, merise, 'merise')
-    loopJSON(setMajorUML, uml, 'uml')
+    loopJSON(setMajorMerise, merise)
+    loopJSON(setMajorUML, uml)
   }, [])
-
-  console.log(majorMerise, majorUML)
 
   const showMajorUML = majorUML.map(infos => {
     return (
       <li key={infos.id}>
-        <div>
+        <div className={styles.majorElementDiv}>
           <Link href={`/uml#${infos.id}`}>
-            <p>{infos.title}</p>
-            <p>{infos.description}</p>
+            <p className={styles.majorElementTitle}>{infos.title}</p>
+            <p className={styles.majorElementDescription}>{infos.description}</p>
           </Link>
         </div>
       </li>
@@ -55,10 +53,10 @@ export default function Home() {
   const showMajorMerise = majorMerise.map(infos => {
     return (
       <li key={infos.id}>
-        <div>
+        <div className={styles.majorElementDiv}>
           <Link href={`/merise#${infos.id}`}>
-            <p>{infos.title}</p>
-            <p>{infos.description}</p>
+            <p className={styles.majorElementTitle}>{infos.title}</p>
+            <p className={styles.majorElementDescription}>{infos.description}</p>
           </Link>
         </div>
       </li>
@@ -66,45 +64,62 @@ export default function Home() {
   })
   return (
     <main className={styles.main}>
-      <h2 className={[nobile.className].join(' ')}>
-        HomePage
+      <h2 className={[nobile.className, styles.mainTitle].join(' ')}>
+        Accueil
       </h2>
       <section className={styles.focus}>
-        <h3>Important à connaitre</h3>
-        <h4 className={[nobile.className].join(' ')}>Les diagrammes UML</h4>
-        <ul>
-          {showMajorUML}
-        </ul>
-        <h4 className={[nobile.className].join(' ')}>La méthode Merise</h4>
-        <ul>
-          {showMajorMerise}
-        </ul>
+        <h3 className={styles.focusTitle}>Important à connaitre</h3>
+        <div className={styles.focusDiv}>
+          <div className={styles.focusSubdiv}>
+            <h4 className={[nobile.className, styles.focusSubtitle].join(' ')}>Les diagrammes UML</h4>
+            <ul>
+              {showMajorUML}
+            </ul>
+          </div>
+          <div className={styles.focusSubdiv}>
+            <h4 className={[nobile.className, styles.focusSubtitle].join(' ')}>La méthode Merise</h4>
+            <ul>
+              {showMajorMerise}
+            </ul>
+          </div>
+        </div>
       </section>
-      <section className={styles.navCategory}>
-        <h3>Naviguer par catégories</h3>
-        <Link href="/uml">
-          <div className={styles.navCard}>
-            <h4 className={[nobile.className].join(' ')}>
+      <section className={styles.focus}>
+        <h3 className={styles.focusTitle}>Naviguer par catégories</h3>
+        <div className={styles.focusDiv}>
+
+          <div className={styles.focusSubdiv}>
+
+
+            <h4 className={[nobile.className, styles.focusSubtitle].join(' ')}>
               UML
             </h4>
-            <p>
-              Ici les différents types de diagrammes UML
-            </p>
-            <p>voir...</p>
+            <div className={styles.majorElementDiv}>
+              <Link href="/uml">
+                <p className={styles.majorElementTitle}>
+                  Ici les différents types de diagrammes UML
+                </p>
+                <p>voir...</p>
+              </Link>
+            </div>
           </div>
-        </Link>
-        <Link href="/merise">
-          <div className={styles.navCard}>
-            <h4 className={[nobile.className].join(' ')}>
+          <div className={styles.focusSubdiv}>
+
+
+            <h4 className={[nobile.className, styles.focusSubtitle].join(' ')}>
               Merise
             </h4>
-            <p>
-              Ici la description de la méthode Merise
-            </p>
-            <p>voir...</p>
+            <div className={styles.majorElementDiv}>
+              <Link href="/merise">
+                <p className={styles.majorElementTitle}>
+                  Ici les différent modèles de la métode Merise
+                </p>
+                <p>voir...</p>
+              </Link>
+            </div>
           </div>
-        </Link>
+        </div>
       </section>
-    </main>
+    </main >
   )
 }
