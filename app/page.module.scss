@@ -22,7 +22,7 @@
   margin: variables.$card-margin;
 }
 
-[data-theme-ui='dark'] {
+[data-theme='dark'] {
   .focus {
     @include mixins.cardDefault(variables.$accent-color-primary, 1px, darken(variables.$background-color-dark, 5%), );
     scale: 1;
