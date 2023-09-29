@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,10 +14,9 @@ body {
 }
 
 :root {
-
-  background-color: $background-color;
   text-align: center;
 
+  background-color: $background-color;
 
   h1,
   h2,
@@ -42,21 +42,23 @@ body {
     padding: 0;
   }
 
-  [data-theme="dark"] {
-    background-color: $background-color-dark;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: $title-color-dark;
-    }
-
-    p,
-    li {
-      color: $content-color-dark;
-    }
-  }
 }
+
+  [data-theme='dark'] {
+
+        background-color: $background-color-dark;
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: $title-color-dark;
+      }
+
+      p,
+      li {
+        color: $content-color-dark;
+      }
+    
+  }

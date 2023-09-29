@@ -12,15 +12,15 @@ const metrophobic = Metrophobic({
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang="fr">
       <body className={metrophobic.className}>
-        <Navbar />
         <Providers>
+          <Navbar />
           <ElementContextProvider>
             {children}
           </ElementContextProvider>
+          <Footer />
         </Providers>
-        <Footer />
       </body>
     </html>
   )

@@ -36,6 +36,7 @@
     left: 20px;
     width: 200px;
     background-color: white;
+    color: variables.$content-color;
     padding: 10px;
     border: 1px solid black;
     border-radius: 20px;
@@ -75,7 +76,7 @@
   transform: translateY(250px);
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   .elementDisplay {
     background-color: variables.$background-color-dark;
 
