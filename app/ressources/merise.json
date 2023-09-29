@@ -4,6 +4,7 @@
     "display": [
       {
         "id": "mcc",
+        "major":false,
         "title": "Modèle conceptuel de communication",
         "description": "Approche du général au particulier, la méthode s’attache à identifier les échanges entre les systèmes. Le modèle de communication représente tous les flux et toute l’activité de l’entreprise. L’entreprise est considérée comme un système, et l’extérieur comme un ensemble de systèmes. L’entreprise est découpée en systèmes fonctionnels ou conceptuels.",
         "elements": [
@@ -30,6 +31,7 @@
       },
       {
         "id": "mct",
+        "major":false,
         "title": "Modèle conceptuel de traitement",
         "description": "Le modèle conceptuel de traitnement est un zoom sur un intervenant du MCC. Il détaille commen il traite l'information qu'il reçoit",
         "elements": [
@@ -61,6 +63,7 @@
       },
       {
         "id": "mcd",
+        "major":true,
         "title": "Modèle conceptuel de données",
         "description": "Le modèle conceptuel de données permet d'avoir un premier aperçu de la manière dont les données seront organisées. On y définit les entités ainsi que les relations qu'elles ont entre elles.'",
         "elements": [
@@ -122,6 +125,7 @@
     "display": [
       {
         "id": "mot",
+        "major":false,
         "title": "Modèle organisationnel de traitement",
         "description": "Le modèle organisationnel de traitement permet d'exprimer comment chaque poste de travail traite un message entrant dans l'organisation. On parle de procédure pour exprimer l'acheminement des actions et réactions entre les différents poste de travail.",
         "elements": [
@@ -153,6 +157,7 @@
       },
       {
         "id": "mod",
+        "major":false,
         "title": "Modèle organisationnel de données",
         "description": "Le modèle organisationnel de données est similaire au modèle conceptuel de données à la différence qu'il exprime uniquement les données concernées par un psote de précis de l'organigramme de l'entreprise. Il se construit exactement comme le MCD. Veuillez vous référer à ce dernier pour sa conception",
         "elements": [
@@ -209,6 +214,7 @@
       },
       {
         "id": "moc",
+        "major":false,
         "title": "Modèle organisationnel de communication",
         "description": "Le modèle organisationnel de communication exprime les échanges entre différents site de l'entreprise. Un échange à lieu quand un poste de travail situé sur un site donné effectue une opération et que la vue en consultation de cette oépration se trouve sur un autre site.",
         "elements": [
@@ -235,6 +241,7 @@
     "display": [
       {
         "id": "mld",
+        "major":true,
         "title": "Modèle logique de données",
         "description": "Le modèle logique de données est un passage depuis le modèle le modèle conceptuel (ou organisationnel) de données vers un modèle qui définie la structure qui prendra la base de données dans un système de gestion de base de données relationnelle. Des règles définissent la manière dont la conversion doit se faire.",
         "elements": [
@@ -271,6 +278,7 @@
       },
       {
         "id": "mlt",
+        "major":false,
         "title": "Modèle logique de traitement",
         "description": "Le modèle logique de traitement suit le modèle organisationnel de traitement. Celui-ci comprend les opérations effectuées par des poste de travail. A chaque opération organisées sont associés un ou plusieurs outils informatiques.",
         "elements": [
@@ -297,6 +305,7 @@
       },
       {
         "id": "mlc",
+        "major":false,
         "title": "Modèle logique de communication",
         "description": "Le modèle logique de communication se présente sous la même forme que le modèle organisationnel de présentation, à la différence qu'il ne représente plus les sites, mais les bases de données qui communiquent entre elles.",
         "elements": [
@@ -323,6 +332,7 @@
     "display": [
       {
         "id": "mpd",
+        "major":true,
         "title": "Modèle physique de données",
         "description": "Le modèle phyisque de données est un modèle de la base de données. A partir du modèle logique de données, les tables sont construites tel qu'elles seront définies en base de données. La différence avec le MLD est le typage qui est ajouté à chaque colonne afin de le faire correspondre à la nomenclature spécifique de la base de donnée selectionnée.",
         "elements": [
@@ -344,6 +354,7 @@
       },
       {
         "id": "mpt",
+        "major":false,
         "title": "Modèle physique de traitement",
         "description": "Le modèle phyisque de traitement consiste en l'écriture du code. C'est la finalité de la méthode Merise dans la conception d'application : la production de code à partir de la conception.",
         "elements": [
@@ -355,6 +366,7 @@
       },
       {
         "id": "mpc",
+        "major":false,
         "title": "Modèle physique de communication",
         "description": "Dans le contexte du développement d'application, le modèle physique de communication serait les échanges effectifs entre les différents matériels. Il n'existe pas de modèle propre à Merise.",
         "elements": [

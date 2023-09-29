@@ -4,6 +4,7 @@
     "display": [
       {
         "id": "class",
+        "major":true,
         "title": "Diagramme de classe",
         "description": "Le diagramme de sert à décrire la structure logique d'un système en la représentant sous forme de classes et de relations entre les classes",
         "elements": [
@@ -50,6 +51,7 @@
       },
       {
         "id": "object",
+        "major":false,
         "title": "Diagramme d'objet",
         "description": "Un diagramme d’objet représente une instance spécifique d’un diagramme de classes à un moment précis. Il peut être utilisé pour illustrer le modèle de classe en montrant un exemple qui explique le modèle.",
         "elements": [
@@ -96,6 +98,7 @@
       },
       {
         "id": "composite",
+        "major":false,
         "title": "Diagramme de structure composite",
         "description": "Le diagramme de structure composite expose la structure interne d’une classe, et les relation qu’elle peut avoir avec les autres classe",
         "elements": [
@@ -122,6 +125,7 @@
       },
       {
         "id": "composant",
+        "major":false,
         "title": "Diagramme de composants",
         "description": "Diagramme de composants est essentiellement un diagramme de classes qui met l’accent sur les composants systèmes. Il décrit les composants et leurs dépendances dans l’environnement.",
         "elements": [
@@ -143,6 +147,7 @@
       },
       {
         "id": "package",
+        "major":false,
         "title": "Diagramme de paquetages",
         "description": "Un paquetage est une collection d’éléments du modèle : il peut contenir les collections des Uses Cases ou des classes et les relations qui les lient entre eux.Les paquetage peuvent être utilisés dans n’importe quelle vue ou diagramme UML Un paquetage et un espace de nom qui peut posséder des interfaces. Il peut exister des dépendances entre les paquetages et entre les éléments d’un même paquetage. Le diagramme de paquetage sert à organiser les fonctionnalités et à avoir une vision claire des dépendances.",
         "elements": [
@@ -179,6 +184,7 @@
       },
       {
         "id": "deploy",
+        "major":false,
         "title": "Diagramme de déploiement",
         "description": "LE diagramme de déploiement présente la structure du système lors de son exécution. C’est un graphe de noeuds connectés par des associations qui représente la communication. Les noeuds peuvent contenir des instances de composant (indique que le composant vit et s'exécute dans le noeud, les composants peuvent contenir des objets, et les composants sont connectés les uns autres par des relations de dépendances.",
         "elements": [
@@ -205,6 +211,7 @@
       },
       {
         "id": "profil",
+        "major":false,
         "title": "Diagramme de profils",
         "description": "Un profil peut définir des classes, des stéréotypes, des valeurs, des contraintes. Il permet d’introduire nos propres éléments et stéréotypes. Une méta-classe est un profil de classe qui peut être étendu par des stéréotypes. Un stéréotypes est un profil de classe qui précise de quelle manière une méta-classe peut être étendue",
         "elements": [
@@ -236,6 +243,7 @@
     "display": [
       {
         "id": "usecase",
+        "major":true,
         "title": "Diagramme de cas d'utilisation",
         "description": "Le diagramme de cas d'utilisation décrit sous forme d'actions et de réaction le comportement d'un système du point de vue d'un utilisateur.. Il sert à modéliser les aspects d'un système, en montrant les acteurs et les fonctions offertes.",
         "elements": [
@@ -277,6 +285,7 @@
       },
       {
         "id": "activity",
+        "major":false,
         "title": "diagramme d'activité'",
         "description": "Le diagramme d’activité permet de décrire la logique procédurale d’une activité : modélisation des processus métier, modélisation des workflows. Il prend aussi en charge les comportements parallèles. Les diagrammes d’activité indique ce qui se passe mais ne précise pas qui fait quoi : aucune classe n’est désignée.",
         "elements": [
@@ -328,6 +337,7 @@
       },
       {
         "id": "statetransition",
+        "major":false,
         "title": "Diagramme d'état-transition",
         "description": "Il décrit l’enchaînement de tous les états d’un objet. Il est propre à une classe donnée, il décrit les états des objets de cette classe, les événements auxquels ils réagissent, les transitions qu’ils effectuent. ",
         "elements": [
@@ -389,6 +399,7 @@
       },
       {
         "id": "sequence",
+        "major":true,
         "title": "Diagramme de séquence",
         "description": "Le diagramme de séquence permet de représenter les interaction entre objets, acteurs et instances d’objet en précisant la chronologie des échanges entre chacun. Il représente une instance (les scénarios possibles) d’un cas d’utilisation.",
         "elements": [
@@ -440,6 +451,7 @@
       },
       {
         "id": "communication",
+        "major":false,
         "title": "Diagramme de communication",
         "description": "Le diagramme de communication représente les interactions entre les objets et les relations permettant ces interactions. Il est créé à partir du diagramme de séquence",
         "elements": [
@@ -471,6 +483,7 @@
       },
       {
         "id": "time",
+        "major":false,
         "title": "Le diagramme de temps",
         "description": "Le diagramme de temps présente le comportement des objets et leur changement d'état à travers d'une période de temps. Le temps s'écoule de la gauche vers la droite.",
         "elements": [
@@ -497,6 +510,7 @@
       },
       {
         "id": "interactivity",
+        "major":false,
         "title": "Diagramme d'intéractivité'",
         "description": "Le diagramme d'interactivité est utilisé pour la représentation de système complexe. Il s'agit d'un variante du diagramme d'activité qui permet une vue d'ensemble des flux de contrôle. Les noeuds sont des diagrammes de séquence et des diagrammes d'activité. Les éléments constitutifs sont les mêmes que ces derniers.",
         "elements": [

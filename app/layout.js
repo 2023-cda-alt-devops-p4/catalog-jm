@@ -9,10 +9,15 @@ const metrophobic = Metrophobic({
   weight: '400',
 })
 
+export const metadata = {
+  title: 'Mon Catalogue UML et Merise',
+  description: 'Des infos condensées pour comprendre',
+}
+
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body className={metrophobic.className}>
         <Providers>
           <Navbar />
