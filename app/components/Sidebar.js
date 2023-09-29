@@ -29,7 +29,7 @@ const Sidebar = ({ item }) => {
   })
   return (
     <nav className={stylesNav.join(' ')}>
-      <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}></div>
+      <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}><p className={styles.toggleText}>Choisir</p></div>
       <div className={styles.allSections}>
       {sideNavigation}
       <div className={styles.toTopButton} onClick={()=> scrollToTop()}>To the Top ^</div>

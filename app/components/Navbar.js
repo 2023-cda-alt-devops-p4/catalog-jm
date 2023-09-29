@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <h1 className={[nobile.className, styles.mainTitle].join(' ')}>UML et Merise</h1>
       <div className={stylesNav.join(' ')}>
-        <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}></div>
+        <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}><p className={styles.toggleText}>Menu</p></div>
         <ul className={styles.linkList}>
           <Link href="/" className={styles.navLink}><li className={styles.listElement}>Accueil</li></Link>
           <Link href="/uml" className={styles.navLink}><li className={styles.listElement}>UML</li></Link>
