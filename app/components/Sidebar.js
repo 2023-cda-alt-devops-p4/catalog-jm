@@ -15,6 +15,9 @@ const Sidebar = ({ item }) => {
     }
   }, [toggle])
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
 
   const sideNavigation = item.map((value, index) => {
     return (
@@ -29,6 +32,7 @@ const Sidebar = ({ item }) => {
       <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}></div>
       <div className={styles.allSections}>
       {sideNavigation}
+      <div className={styles.toTopButton} onClick={()=> scrollToTop()}>To the Top ^</div>
       </div>
     </nav>
   )
