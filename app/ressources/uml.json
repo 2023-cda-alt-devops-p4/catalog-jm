@@ -6,7 +6,7 @@
         "id": "class",
         "major":true,
         "title": "Diagramme de classe",
-        "description": "Le diagramme de sert à décrire la structure logique d'un système en la représentant sous forme de classes et de relations entre les classes",
+        "description": "Le diagramme de classe sert à décrire la structure logique d'un système en la représentant sous forme de classes et de relations entre les classes",
         "elements": [
           {
             "name": "Classe",
@@ -286,7 +286,7 @@
       {
         "id": "activity",
         "major":false,
-        "title": "diagramme d'activité'",
+        "title": "diagramme d'activité",
         "description": "Le diagramme d’activité permet de décrire la logique procédurale d’une activité : modélisation des processus métier, modélisation des workflows. Il prend aussi en charge les comportements parallèles. Les diagrammes d’activité indique ce qui se passe mais ne précise pas qui fait quoi : aucune classe n’est désignée.",
         "elements": [
           {
@@ -511,7 +511,7 @@
       {
         "id": "interactivity",
         "major":false,
-        "title": "Diagramme d'intéractivité'",
+        "title": "Diagramme d'intéractivité",
         "description": "Le diagramme d'interactivité est utilisé pour la représentation de système complexe. Il s'agit d'un variante du diagramme d'activité qui permet une vue d'ensemble des flux de contrôle. Les noeuds sont des diagrammes de séquence et des diagrammes d'activité. Les éléments constitutifs sont les mêmes que ces derniers.",
         "elements": [
         ],

@@ -65,7 +65,7 @@
         "id": "mcd",
         "major":true,
         "title": "Modèle conceptuel de données",
-        "description": "Le modèle conceptuel de données permet d'avoir un premier aperçu de la manière dont les données seront organisées. On y définit les entités ainsi que les relations qu'elles ont entre elles.'",
+        "description": "Le modèle conceptuel de données permet d'avoir un premier aperçu de la manière dont les données seront organisées. On y définit les entités ainsi que les relations qu'elles ont entre elles.",
         "elements": [
           {
             "name": "Entité",
@@ -338,12 +338,12 @@
         "elements": [
           {
             "name": "Table",
-            "url": "",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/element/mlc/bdd.png",
             "explanation": "Les types sont indiqués à côté des informations qui deviendront des colonnes en base de données."
           },
           {
             "name": "Liaison",
-            "url": "",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/element/mlc/echange.png",
             "explanation": "Les liaisons permettent de représenter visuellement les tables qui ont des liens entre elles."
           }
         ],

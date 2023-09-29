@@ -48,7 +48,6 @@
         .modelLink {
           .modelListElement {
             padding: 5px;
-            
             &:hover {
               border-left: 2px solid variables.$title-color;
               font-weight: bold;
@@ -89,7 +88,6 @@
   }
 
   .contentSection {
-    // max-width: 90vw;
     margin: auto;
 
     .sectionTitle {
@@ -113,7 +111,11 @@
         .modelList {
 
           .modelLink {
-
+            .modelListElement {
+              &:hover {
+                border-left: 2px solid variables.$title-color-dark;
+              }
+            }
             .isSelected {
               border-left: 2px solid variables.$title-color-dark;
             }
