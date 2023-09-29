@@ -1,5 +1,7 @@
+@use 'variables';
+
 .footer {
-  height: 150px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,5 +11,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    .footerLink {
+      color: variables.$content-color;
+      margin: 5px;
+    }
   }
+}
+
+[data-theme='dark'] {
+
+.footer {
+  .sources {
+    .footerLink {
+      color: variables.$content-color-dark;
+    }
+  }
+}
 }
