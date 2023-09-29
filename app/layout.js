@@ -1,10 +1,9 @@
-'use client'
-import { useState } from 'react'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import './globals.scss'
 import { Metrophobic } from 'next/font/google'
 import { ElementContextProvider } from '@/context/elementCtx'
+import { Providers } from '@/context/themeProviders'
 const metrophobic = Metrophobic({
   subsets: ['latin'],
   weight: '400',
@@ -12,15 +11,15 @@ const metrophobic = Metrophobic({
 
 export default function RootLayout({ children }) {
 
-  const [darkTheme, setDarkTheme] = useState('')
-
   return (
-    <html lang="fr">
-      <body className={metrophobic.className} data-theme-ui={darkTheme}>
-        <Navbar darkTheme={darkTheme} setDarkTheme={() => setDarkTheme(prev => prev === 'light' ? 'dark' : 'light')} />
-        <ElementContextProvider>
-          {children}
-        </ElementContextProvider>
+    <html lang="fr" suppressHydrationWarning>
+      <body className={metrophobic.className}>
+        <Navbar />
+        <Providers>
+          <ElementContextProvider>
+            {children}
+          </ElementContextProvider>
+        </Providers>
         <Footer />
       </body>
     </html>

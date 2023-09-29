@@ -8,7 +8,7 @@ const nobile = Nobile({
   subsets: ['latin'],
   weight: '400',
 })
-const Navbar = ({ setDarkTheme }) => {
+const Navbar = () => {
   const [stylesNav, setStylesNav] = useState([])
   const [toggle, setToggle] = useState(true)
 
@@ -30,7 +30,7 @@ const Navbar = ({ setDarkTheme }) => {
           <Link href="/uml" className={styles.navLink}><li className={styles.listElement}>UML</li></Link>
           <Link href="/merise" className={styles.navLink}><li className={styles.listElement}>Merise</li></Link>
           <li>
-            <div className={styles.toggleSlide} onClick={setDarkTheme}>
+            <div className={styles.toggleSlide} onClick={() =>{}}>
               <div className={[styles.themeToggle].join(' ')}></div>
             </div>
           </li>
