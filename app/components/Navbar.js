@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import styles from '../navbar.module.scss'
 import { Nobile } from 'next/font/google'
 import { useTheme } from 'next-themes'
+import { usePathname } from 'next/navigation'
 
 const nobile = Nobile({
   subsets: ['latin'],
@@ -14,6 +15,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(true)
   const { theme, setTheme } = useTheme()
 
+  const path = usePathname()
   useEffect(() => {
     if (toggle) {
       setStylesNav([styles.linkContainer, styles.isHidden])
@@ -28,9 +30,9 @@ const Navbar = () => {
       <div className={stylesNav.join(' ')}>
         <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}><p className={styles.toggleText}>Menu</p></div>
         <ul className={styles.linkList}>
-          <li className={styles.navLink}><Link href="/" className={styles.listElement}>Accueil</Link></li>
-          <li className={styles.navLink}><Link href="/uml" className={styles.listElement}>UML</Link></li>
-          <li className={styles.navLink}><Link href="/merise" className={styles.listElement}>Merise</Link></li>
+          <li><Link href="/" className={styles.navLink}><div className={path === "/" ? styles.isSelected : styles.listElement}>Accueil</div></Link></li>
+          <li><Link href="/uml" className={styles.navLink}><div className={path === "/uml" ? styles.isSelected : styles.listElement}>UML</div></Link></li>
+          <li><Link href="/merise" className={styles.navLink}><div className={path === "/merise" ? styles.isSelected : styles.listElement}>Merise</div></Link></li>
           <li>
             <div className={styles.toggleSlide} onClick={() => { theme === 'light' ? setTheme('dark') : setTheme('light') }}>
               <div className={[styles.themeToggle].join(' ')}></div>
