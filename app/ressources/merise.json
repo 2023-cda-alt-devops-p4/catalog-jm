@@ -247,27 +247,27 @@
         "elements": [
           {
             "name": "Relation de type 1 - 1",
-            "url": "",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/element/mld/11.png",
             "explanation": "Lors de la conversion vers le MLD, les deux entités échangent leur clé primaire."
           },
           {
             "name": "Relation de type 1 - N",
-            "url": "",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/element/mld/1n.png",
             "explanation": "Lors de la conversion vers le MLD, la clé primaire de l'entité 1 est injectée dans l'entité N"
           },
           {
             "name": "Relation de type N - N",
-            "url": "",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/element/mld/nn.png",
             "explanation": "Lors de la conversion vers le MLD, une table intermédiaire est créée contenant une clé primaire propre à la table ainsi que les clés primaire de chacune des autres tables."
           },
           {
             "name": "Table",
-            "url": "",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/element/mld/table.png",
             "explanation": "Les entités deviennent des tables qui peuvent contenir les clés primaires des autres tables auxquelles elles sont liées."
           },
           {
             "name": "Liaison",
-            "url": "",
+            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/element/mld/liaison.png",
             "explanation": "Les liaisons permettent de représenter visuellement les tables qui ont des liens entre elles."
           }
         ],
@@ -336,16 +336,6 @@
         "title": "Modèle physique de données",
         "description": "Le modèle phyisque de données est un modèle de la base de données. A partir du modèle logique de données, les tables sont construites tel qu'elles seront définies en base de données. La différence avec le MLD est le typage qui est ajouté à chaque colonne afin de le faire correspondre à la nomenclature spécifique de la base de donnée selectionnée.",
         "elements": [
-          {
-            "name": "Table",
-            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/element/mlc/bdd.png",
-            "explanation": "Les types sont indiqués à côté des informations qui deviendront des colonnes en base de données."
-          },
-          {
-            "name": "Liaison",
-            "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/element/mlc/echange.png",
-            "explanation": "Les liaisons permettent de représenter visuellement les tables qui ont des liens entre elles."
-          }
         ],
         "example": {
           "url": "https://2023-cda-alt-devops-p4.github.io/catalog-jm/img/merise/example/mpd.png",
