@@ -1,9 +1,7 @@
-'use client'
-import React, { useContext } from 'react'
-import Image from 'next/image'
-import { elementContext } from '@/context/elementCtx'
+import React from 'react'
 import { Nobile } from 'next/font/google'
 import styles from '../component.module.scss'
+import ShowLegendButton from './ShowLegendButton'
 
 const nobile = Nobile({
   subsets: ['latin'],
@@ -11,9 +9,6 @@ const nobile = Nobile({
 })
 
 const UmlComponent = ({ item }) => {
-  const ratio = 16 / 9
-  // import context to change the content of the element div
-  const { state, dispatch } = useContext(elementContext)
 
   return (
     <section id={item.id} className={styles.individualComponent}>
@@ -25,9 +20,8 @@ const UmlComponent = ({ item }) => {
         item.elements.length < 1 ?
         null
         :
-        <div className={styles.legendButton} onClick={() => dispatch({ type: 'hydrate', payload: item.elements })}>Montrer la légende</div>
+        <ShowLegendButton elements={item.elements} />
       }
-  
       {
         item.example.url !== '' ?
           <>

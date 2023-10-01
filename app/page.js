@@ -1,10 +1,9 @@
-'use client'
 import styles from './page.module.scss'
 import Link from 'next/link'
 import { Nobile } from 'next/font/google'
 import uml from './ressources/uml.json'
 import merise from './ressources/merise.json'
-import { useEffect, useState } from 'react'
+import MajorElement from './components/MajorElement'
 
 const nobile = Nobile({
   subsets: ['latin'],
@@ -13,12 +12,8 @@ const nobile = Nobile({
 
 
 export default function Home() {
-
-  const [majorUML, setMajorUML] = useState([])
-  const [majorMerise, setMajorMerise] = useState([])
-
   // function to loop through
-  const loopJSON = (setVariable, json) => {
+  const loopJSON = (json, route) => {
     let filter = []
     let result = []
     json.forEach(element => {
@@ -29,39 +24,17 @@ export default function Home() {
         })
       }
     })
-    setVariable(result)
+    return result.map(infos => {
+      return (
+        <MajorElement key={infos.id} infos={infos} type={route} />
+      )
+    })
   }
 
-  useEffect(() => {
-    loopJSON(setMajorMerise, merise)
-    loopJSON(setMajorUML, uml)
-  }, [])
 
-  const showMajorUML = majorUML.map(infos => {
-    return (
-      <li key={infos.id}>
-        <div className={styles.majorElementDiv}>
-          <Link href={`/uml#${infos.id}`}>
-            <p className={styles.majorElementTitle}>{infos.title}</p>
-            <p className={styles.majorElementDescription}>{infos.description}</p>
-          </Link>
-        </div>
-      </li>
-    )
-  })
+  const showMajorUML = loopJSON(uml, 'uml')
+  const showMajorMerise =loopJSON(merise,'merise')
 
-  const showMajorMerise = majorMerise.map(infos => {
-    return (
-      <li key={infos.id}>
-        <div className={styles.majorElementDiv}>
-          <Link href={`/merise#${infos.id}`}>
-            <p className={styles.majorElementTitle}>{infos.title}</p>
-            <p className={styles.majorElementDescription}>{infos.description}</p>
-          </Link>
-        </div>
-      </li>
-    )
-  })
   return (
     <main className={styles.main}>
       <h2 className={[nobile.className, styles.mainTitle].join(' ')}>
@@ -112,7 +85,7 @@ export default function Home() {
             <div className={styles.majorElementDiv}>
               <Link href="/merise">
                 <p className={styles.majorElementTitle}>
-                  Ici les différent modèles de la métode Merise
+                  Ici les différents modèles de la métode Merise
                 </p>
                 <p>voir...</p>
               </Link>

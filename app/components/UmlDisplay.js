@@ -9,7 +9,6 @@ const UmlDisplay = ({item}) => {
       <UmlComponent item={item} key={index} />
     )
 })
-
   return (
     <div className={styles.componentDisplay}>
       <h3 className={styles.componentTitle}>
