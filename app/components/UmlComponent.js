@@ -30,8 +30,8 @@ const UmlComponent = ({ item }) => {
                 src={item.example.url}
                 alt={item.title}
               />
-            </div>
             <p className={[nobile.className].join(' ')}>{item.example.details}</p>
+            </div>
           </>
           : null
       }

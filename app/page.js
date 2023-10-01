@@ -40,6 +40,10 @@ export default function Home() {
       <h2 className={[nobile.className, styles.mainTitle].join(' ')}>
         Accueil
       </h2>
+      <div className={styles.presentationHomepage}>
+      <p>Vous êtes sur un catalogue résumant les différents diagrammes UML ainsi que la méthode Merise.</p>
+      <p>Pour chaque diagramme ou modèle, vous pourrez voir un exemple d'utilisation ainsi que les différents éléments pouvant être utilisés pour les créer, accompagner d'une explication.</p>
+      </div>
       <section className={styles.focus}>
         <h3 className={styles.focusTitle}>Important à connaitre</h3>
         <div className={styles.focusDiv}>
@@ -54,42 +58,6 @@ export default function Home() {
             <ul>
               {showMajorMerise}
             </ul>
-          </div>
-        </div>
-      </section>
-      <section className={styles.focus}>
-        <h3 className={styles.focusTitle}>Naviguer par catégories</h3>
-        <div className={styles.focusDiv}>
-
-          <div className={styles.focusSubdiv}>
-
-
-            <h4 className={[nobile.className, styles.focusSubtitle].join(' ')}>
-              UML
-            </h4>
-            <div className={styles.majorElementDiv}>
-              <Link href="/uml">
-                <p className={styles.majorElementTitle}>
-                  Ici les différents types de diagrammes UML
-                </p>
-                <p>voir...</p>
-              </Link>
-            </div>
-          </div>
-          <div className={styles.focusSubdiv}>
-
-
-            <h4 className={[nobile.className, styles.focusSubtitle].join(' ')}>
-              Merise
-            </h4>
-            <div className={styles.majorElementDiv}>
-              <Link href="/merise">
-                <p className={styles.majorElementTitle}>
-                  Ici les différents modèles de la métode Merise
-                </p>
-                <p>voir...</p>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
