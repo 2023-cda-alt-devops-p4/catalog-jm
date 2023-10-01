@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../diagram.module.scss'
 import SidebarTopMenu from './SidebarTopMenu'
+import { ClickContextProvider } from '@/context/clickCtx'
 
 const Sidebar = ({ item }) => {
   const [stylesNav, setStylesNav] = useState([])
@@ -28,13 +29,15 @@ const Sidebar = ({ item }) => {
     )
   })
   return (
-    <nav className={stylesNav.join(' ')}>
-      <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}><p className={styles.toggleText}>Choisir</p></div>
-      <div className={styles.allSections}>
-      {sideNavigation}
-      <div className={styles.toTopButton} onClick={()=> scrollToTop()}>To the Top ^</div>
-      </div>
-    </nav>
+    <ClickContextProvider>
+      <nav className={stylesNav.join(' ')}>
+        <div onClick={() => setToggle(prev => !prev)} className={styles.toggleButton}><p className={styles.toggleText}>Choisir</p></div>
+        <div className={styles.allSections}>
+          {sideNavigation}
+          <div className={styles.toTopButton} onClick={() => scrollToTop()}>To the Top ^</div>
+        </div>
+      </nav>
+    </ClickContextProvider>
   )
 }
 

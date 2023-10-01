@@ -1,11 +1,9 @@
-'use client'
 import React from 'react'
 import styles from '../diagram.module.scss'
 import uml from '../ressources/uml.json'
 import Sidebar from '../components/Sidebar'
 import UmlDisplay from '../components/UmlDisplay'
 import ElementList from '../components/ElementList'
-import { ClickContextProvider } from '@/context/clickCtx'
 const Uml = () => {
   const displayDiagrams = uml.map((value, index) => {
     return (
@@ -13,8 +11,6 @@ const Uml = () => {
     )
   })
   return (
-    <ClickContextProvider>
-
       <main className={styles.main}>
         <Sidebar item={uml} />
         <section className={styles.contentSection}>
@@ -24,9 +20,7 @@ const Uml = () => {
           {displayDiagrams}
         </section>
         <ElementList />
-
       </main>
-    </ClickContextProvider>
   )
 }
 
